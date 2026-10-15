@@ -1,0 +1,178 @@
+[
+  {
+    "ec": "1.1.1.1",
+    "esperado": "Alcohol deshidrogenasa",
+    "nombre_aceptado": "alcohol dehydrogenase",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/1.1.1.1",
+    "crudo": null
+  },
+  {
+    "ec": "1.1.1.27",
+    "esperado": "Lactato deshidrogenasa",
+    "nombre_aceptado": "L-lactate dehydrogenase",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/1.1.1.27",
+    "crudo": null
+  },
+  {
+    "ec": "1.1.1.37",
+    "esperado": "Malato deshidrogenasa",
+    "nombre_aceptado": "(S)-malate dehydrogenase (NAD(+), oxaloacetate-forming)",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/1.1.1.37",
+    "crudo": null
+  },
+  {
+    "ec": "2.7.1.1",
+    "esperado": "Hexoquinasa",
+    "nombre_aceptado": "hexokinase",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/2.7.1.1",
+    "crudo": null
+  },
+  {
+    "ec": "2.7.1.2",
+    "esperado": "Glucoquinasa",
+    "nombre_aceptado": "glucokinase",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/2.7.1.2",
+    "crudo": null
+  },
+  {
+    "ec": "3.2.1.23",
+    "esperado": "β-Galactosidasa",
+    "nombre_aceptado": "beta-galactosidase",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/3.2.1.23",
+    "crudo": null
+  },
+  {
+    "ec": "3.4.17.1",
+    "esperado": "Carboxipeptidasa A",
+    "nombre_aceptado": "carboxypeptidase A",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/3.4.17.1",
+    "crudo": null
+  },
+  {
+    "ec": "4.2.1.11",
+    "esperado": "Enolasa (fosfopiruvato hidratasa)",
+    "nombre_aceptado": "phosphopyruvate hydratase",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/4.2.1.11",
+    "crudo": null
+  },
+  {
+    "ec": "4.1.1.1",
+    "esperado": "Piruvato descarboxilasa",
+    "nombre_aceptado": "pyruvate decarboxylase",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/4.1.1.1",
+    "crudo": null
+  },
+  {
+    "ec": "5.3.1.1",
+    "esperado": "Triosafosfato isomerasa",
+    "nombre_aceptado": "triose-phosphate isomerase",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/5.3.1.1",
+    "crudo": null
+  },
+  {
+    "ec": "5.3.1.9",
+    "esperado": "Glucosa-6-fosfato isomerasa (fosfoglucosa isomerasa)",
+    "nombre_aceptado": "glucose-6-phosphate isomerase",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/5.3.1.9",
+    "crudo": null
+  },
+  {
+    "ec": "5.2.1.1",
+    "esperado": "Maleato isomerasa",
+    "nombre_aceptado": "maleate isomerase",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/5.2.1.1",
+    "crudo": null
+  },
+  {
+    "ec": "6.4.1.1",
+    "esperado": "Piruvato carboxilasa",
+    "nombre_aceptado": "pyruvate carboxylase",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/6.4.1.1",
+    "crudo": null
+  },
+  {
+    "ec": "2.7.1.40",
+    "esperado": "Piruvato quinasa",
+    "nombre_aceptado": "pyruvate kinase",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/2.7.1.40",
+    "crudo": null
+  },
+  {
+    "ec": "2.7.11.11",
+    "esperado": "Proteína quinasa A",
+    "nombre_aceptado": "cAMP-dependent protein kinase",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/2.7.11.11",
+    "crudo": null
+  },
+  {
+    "ec": "3.2.1.20",
+    "esperado": "(control: α-glucosidasa)",
+    "nombre_aceptado": "alpha-glucosidase",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/3.2.1.20",
+    "crudo": null
+  },
+  {
+    "ec": "2.7.1.11",
+    "esperado": "Fosfofructoquinasa-1",
+    "nombre_aceptado": "6-phosphofructokinase",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/2.7.1.11",
+    "crudo": null
+  },
+  {
+    "ec": "4.1.2.13",
+    "esperado": "Aldolasa",
+    "nombre_aceptado": "fructose-bisphosphate aldolase",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/4.1.2.13",
+    "crudo": null
+  },
+  {
+    "ec": "1.2.1.12",
+    "esperado": "Gliceraldehído-3-fosfato deshidrogenasa",
+    "nombre_aceptado": "glyceraldehyde-3-phosphate dehydrogenase (phosphorylating)",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/1.2.1.12",
+    "crudo": null
+  },
+  {
+    "ec": "2.7.2.3",
+    "esperado": "Fosfoglicerato quinasa",
+    "nombre_aceptado": "phosphoglycerate kinase",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/2.7.2.3",
+    "crudo": null
+  },
+  {
+    "ec": "5.4.2.11",
+    "esperado": "Fosfoglicerato mutasa",
+    "nombre_aceptado": "phosphoglycerate mutase (2,3-diphosphoglycerate-dependent)",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/5.4.2.11",
+    "crudo": null
+  },
+  {
+    "ec": "5.4.2.12",
+    "esperado": "Fosfoglicerato mutasa (independiente de 2,3-BPG)",
+    "nombre_aceptado": "phosphoglycerate mutase (2,3-diphosphoglycerate-independent)",
+    "estado": "verificado",
+    "fuente": "https://enzyme.expasy.org/EC/5.4.2.12",
+    "crudo": null
+  }
+]

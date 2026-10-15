@@ -1,0 +1,2129 @@
+{
+  "generado": "2026-10-14",
+  "criterio": "Contrasta cada molécula de molecules_list.py contra el CCD del PDB y PubChem y escribe datos/moleculas.json.\n\nCriterio de verificación (por molécula):\n  - 'verificado'  : el InChIKey (bloque de conectividad, 14 caracteres) coincide entre CCD, PubChem y el SMILES elegido\n                    (recalculado con RDKit). El bloque de conectividad es insensible al estado de protonación.\n  - 'parcial'     : solo hay UNA fuente externa (CCD o PubChem) y es coherente con el SMILES elegido.\n  - 'no verificado': ninguna fuente o hay discrepancia de conectividad.\nSe anotan aparte las diferencias de estereoquímica (2.º bloque del InChIKey) y de fórmula (estados de protonación).",
+  "moleculas": [
+    {
+      "id": "glucosa",
+      "nombre": "D-Glucosa (α-D-glucopiranosa)",
+      "usos": "diap. 43, 44, 48; S11, S13",
+      "ccd": {
+        "codigo": "GLC",
+        "nombre": "alpha-D-glucopyranose",
+        "formula": "C6 H12 O6",
+        "inchikey": "WQZGKKKJIJFFOK-DVKNGEFBSA-N",
+        "smiles": "C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O)O)O)O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 79025,
+        "titulo": "Alpha-D-Glucose",
+        "formula": "C6H12O6",
+        "inchikey": "WQZGKKKJIJFFOK-DVKNGEFBSA-N",
+        "smiles": "C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O)O)O)O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "WQZGKKKJIJFFOK-DVKNGEFBSA-N",
+        "formula": "C6H12O6"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O)O)O)O)O",
+      "rdkit": {
+        "formula": "C6H12O6",
+        "inchikey": "WQZGKKKJIJFFOK-DVKNGEFBSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "OC[C@H]1O[C@H](O)[C@H](O)[C@@H](O)[C@@H]1O",
+      "notas": []
+    },
+    {
+      "id": "g6p",
+      "nombre": "D-Glucosa-6-fosfato",
+      "usos": "diap. 43, 46, 48; S11, S13",
+      "ccd": {
+        "codigo": "G6P",
+        "nombre": "6-O-phosphono-alpha-D-glucopyranose",
+        "formula": "C6 H13 O9 P",
+        "inchikey": "NBSCHQHZLSJFNQ-DVKNGEFBSA-N",
+        "smiles": "C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O)O)O)O)OP(=O)(O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 439284,
+        "titulo": "alpha-D-Glucose 6-phosphate",
+        "formula": "C6H13O9P",
+        "inchikey": "NBSCHQHZLSJFNQ-DVKNGEFBSA-N",
+        "smiles": "C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O)O)O)O)OP(=O)(O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "NBSCHQHZLSJFNQ-DVKNGEFBSA-N",
+        "formula": "C6H13O9P"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O)O)O)O)OP(=O)(O)O",
+      "rdkit": {
+        "formula": "C6H13O9P",
+        "inchikey": "NBSCHQHZLSJFNQ-DVKNGEFBSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=P([O-])([O-])OC[C@H]1O[C@H](O)[C@H](O)[C@@H](O)[C@@H]1O",
+      "notas": []
+    },
+    {
+      "id": "f6p",
+      "nombre": "D-Fructosa-6-fosfato",
+      "usos": "diap. 46 (corregida); S13",
+      "ccd": {
+        "codigo": "F6P",
+        "nombre": "6-O-phosphono-beta-D-fructofuranose",
+        "formula": "C6 H13 O9 P",
+        "inchikey": "BGWGXPAPYGQALX-ARQDHWQXSA-N",
+        "smiles": "C([C@@H]1[C@H]([C@@H]([C@](O1)(CO)O)O)O)OP(=O)(O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 440641,
+        "titulo": "beta-D-fructose 6-phosphate",
+        "formula": "C6H13O9P",
+        "inchikey": "BGWGXPAPYGQALX-ARQDHWQXSA-N",
+        "smiles": "C([C@@H]1[C@H]([C@@H]([C@](O1)(CO)O)O)O)OP(=O)(O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "BGWGXPAPYGQALX-ARQDHWQXSA-N",
+        "formula": "C6H13O9P"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "C([C@@H]1[C@H]([C@@H]([C@](O1)(CO)O)O)O)OP(=O)(O)O",
+      "rdkit": {
+        "formula": "C6H13O9P",
+        "inchikey": "BGWGXPAPYGQALX-ARQDHWQXSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=P([O-])([O-])OC[C@H]1O[C@](O)(CO)[C@@H](O)[C@@H]1O",
+      "notas": []
+    },
+    {
+      "id": "g3p",
+      "nombre": "D-Gliceraldehído-3-fosfato (G3P)",
+      "usos": "diap. 29–30; S10",
+      "ccd": {
+        "codigo": "G3H",
+        "nombre": "GLYCERALDEHYDE-3-PHOSPHATE",
+        "formula": "C3 H7 O6 P",
+        "inchikey": "LXJXRIRHZLFYRP-VKHMYHEASA-N",
+        "smiles": "C([C@H](C=O)O)OP(=O)(O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 439168,
+        "titulo": "Triose phosphate",
+        "formula": "C3H7O6P",
+        "inchikey": "LXJXRIRHZLFYRP-VKHMYHEASA-N",
+        "smiles": "C([C@H](C=O)O)OP(=O)(O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "LXJXRIRHZLFYRP-VKHMYHEASA-N",
+        "formula": "C3H7O6P"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "C([C@H](C=O)O)OP(=O)(O)O",
+      "rdkit": {
+        "formula": "C3H7O6P",
+        "inchikey": "LXJXRIRHZLFYRP-VKHMYHEASA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=C[C@H](O)COP(=O)([O-])[O-]",
+      "notas": []
+    },
+    {
+      "id": "dhap",
+      "nombre": "Dihidroxiacetona fosfato (DHAP)",
+      "usos": "diap. 29–30; S10",
+      "ccd": {
+        "codigo": "13P",
+        "nombre": "1,3-DIHYDROXYACETONEPHOSPHATE",
+        "formula": "C3 H7 O6 P",
+        "inchikey": "GNGACRATGGDKBX-UHFFFAOYSA-N",
+        "smiles": "C(C(=O)COP(=O)(O)O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 668,
+        "titulo": "Dihydroxyacetone Phosphate",
+        "formula": "C3H7O6P",
+        "inchikey": "GNGACRATGGDKBX-UHFFFAOYSA-N",
+        "smiles": "C(C(=O)COP(=O)(O)O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "CIEYFQRZEULHJV-UHFFFAOYSA-N",
+        "formula": "C3H9O7P"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "C(C(=O)COP(=O)(O)O)O",
+      "rdkit": {
+        "formula": "C3H7O6P",
+        "inchikey": "GNGACRATGGDKBX-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=C(CO)COP(=O)([O-])[O-]",
+      "notas": [
+        "Fuente(s) discrepante(s) descartada(s) por consenso de las demás: ['nci'] -> ['CIEYFQRZEULHJV-UHFFFAOYSA-N']"
+      ]
+    },
+    {
+      "id": "enediol",
+      "nombre": "cis-Enediol fosfato (intermediario de la TIM)",
+      "usos": "diap. 29–30; S10",
+      "ccd": null,
+      "pubchem": null,
+      "nci_cadd": null,
+      "fuente_smiles": "manual (sin fuente externa)",
+      "smiles": "OC=C(O)COP(=O)(O)O",
+      "rdkit": {
+        "formula": "C3H7O6P",
+        "inchikey": "ABUFTUOVWNZZSN-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [],
+      "estado": "no verificado",
+      "smiles_dibujo_ph7": "O=P([O-])([O-])OCC(O)=CO",
+      "notas": [
+        "Intermediario inestable sin entrada en CCD/PubChem: SMILES construido a mano (isómero de G3P/DHAP, C3H7O6P); estereoquímica cis NO codificada. [no verificado]",
+        "Ninguna fuente externa pudo contrastarse."
+      ]
+    },
+    {
+      "id": "pgh",
+      "nombre": "Fosfoglicolohidroxamato (análogo del intermediario)",
+      "usos": "7TIM; S6, S10",
+      "ccd": {
+        "codigo": "PGH",
+        "nombre": "PHOSPHOGLYCOLOHYDROXAMIC ACID",
+        "formula": "C2 H6 N O6 P",
+        "inchikey": "BAXHHWZKQZIJID-UHFFFAOYSA-N",
+        "smiles": "C(C(=O)NO)OP(=O)(O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 4797,
+        "titulo": "Phosphoglycolohydroxamic Acid",
+        "formula": "C2H6NO6P",
+        "inchikey": "BAXHHWZKQZIJID-UHFFFAOYSA-N",
+        "smiles": "C(C(=O)NO)OP(=O)(O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "GDXKREPQSRTJRF-UHFFFAOYSA-N",
+        "formula": "C2H6NO6P"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "C(C(=O)NO)OP(=O)(O)O",
+      "rdkit": {
+        "formula": "C2H6NO6P",
+        "inchikey": "BAXHHWZKQZIJID-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=C(COP(=O)([O-])[O-])NO",
+      "notas": [
+        "Fuente(s) discrepante(s) descartada(s) por consenso de las demás: ['nci'] -> ['GDXKREPQSRTJRF-UHFFFAOYSA-N']"
+      ]
+    },
+    {
+      "id": "2pg",
+      "nombre": "2-Fosfoglicerato (2-PG)",
+      "usos": "diap. 45 (corregida); S13",
+      "ccd": {
+        "codigo": "2PG",
+        "nombre": "2-PHOSPHOGLYCERIC ACID",
+        "formula": "C3 H7 O7 P",
+        "inchikey": "GXIURPTVHJPJLF-UWTATZPHSA-N",
+        "smiles": "C([C@H](C(=O)O)OP(=O)(O)O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 59,
+        "titulo": "2-Phosphoglyceric Acid",
+        "formula": "C3H7O7P",
+        "inchikey": "GXIURPTVHJPJLF-UHFFFAOYSA-N",
+        "smiles": "C(C(C(=O)O)OP(=O)(O)O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "GXIURPTVHJPJLF-UHFFFAOYSA-N",
+        "formula": "C3H7O7P"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "C([C@H](C(=O)O)OP(=O)(O)O)O",
+      "rdkit": {
+        "formula": "C3H7O7P",
+        "inchikey": "GXIURPTVHJPJLF-UWTATZPHSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=C([O-])[C@@H](CO)OP(=O)([O-])[O-]",
+      "notas": [
+        "Alguna fuente no especifica estereoquímica (UHFFFAOYSA); se conserva la de la fuente que sí la define."
+      ]
+    },
+    {
+      "id": "pep",
+      "nombre": "Fosfoenolpiruvato (PEP)",
+      "usos": "diap. 45; S10, S11, S13",
+      "ccd": {
+        "codigo": "PEP",
+        "nombre": "PHOSPHOENOLPYRUVATE",
+        "formula": "C3 H5 O6 P",
+        "inchikey": "DTBNBXWJWCWCIK-UHFFFAOYSA-N",
+        "smiles": "C=C(C(=O)O)OP(=O)(O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 1005,
+        "titulo": "Phosphoenolpyruvate",
+        "formula": "C3H5O6P",
+        "inchikey": "DTBNBXWJWCWCIK-UHFFFAOYSA-N",
+        "smiles": "C=C(C(=O)O)OP(=O)(O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "DTBNBXWJWCWCIK-UHFFFAOYSA-M",
+        "formula": "C3H4O6P"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "C=C(C(=O)O)OP(=O)(O)O",
+      "rdkit": {
+        "formula": "C3H5O6P",
+        "inchikey": "DTBNBXWJWCWCIK-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "C=C(OP(=O)([O-])[O-])C(=O)[O-]",
+      "notas": []
+    },
+    {
+      "id": "enolpiruvato",
+      "nombre": "Enolpiruvato (2-hidroxiacrilato)",
+      "usos": "S10 (PK)",
+      "ccd": null,
+      "pubchem": {
+        "cid": 37873,
+        "titulo": "2-Hydroxyacrylic acid",
+        "formula": "C3H4O3",
+        "inchikey": "FEWFXBUNENSNBQ-UHFFFAOYSA-N",
+        "smiles": "C=C(C(=O)O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "FEWFXBUNENSNBQ-UHFFFAOYSA-N",
+        "formula": "C3H4O3"
+      },
+      "fuente_smiles": "PubChem",
+      "smiles": "C=C(C(=O)O)O",
+      "rdkit": {
+        "formula": "C3H4O3",
+        "inchikey": "FEWFXBUNENSNBQ-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "C=C(O)C(=O)[O-]",
+      "notas": []
+    },
+    {
+      "id": "piruvato",
+      "nombre": "Piruvato",
+      "usos": "diap. 47, 48; S10, S13",
+      "ccd": {
+        "codigo": "PYR",
+        "nombre": "PYRUVIC ACID",
+        "formula": "C3 H4 O3",
+        "inchikey": "LCTONWCANYUPML-UHFFFAOYSA-N",
+        "smiles": "CC(=O)C(=O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 1060,
+        "titulo": "Pyruvic Acid",
+        "formula": "C3H4O3",
+        "inchikey": "LCTONWCANYUPML-UHFFFAOYSA-N",
+        "smiles": "CC(=O)C(=O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "LCTONWCANYUPML-UHFFFAOYSA-N",
+        "formula": "C3H4O3"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "CC(=O)C(=O)O",
+      "rdkit": {
+        "formula": "C3H4O3",
+        "inchikey": "LCTONWCANYUPML-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "CC(=O)C(=O)[O-]",
+      "notas": []
+    },
+    {
+      "id": "oxalato",
+      "nombre": "Oxalato (análogo del enolato)",
+      "usos": "1A49; S10",
+      "ccd": {
+        "codigo": "OXL",
+        "nombre": "OXALATE ION",
+        "formula": "C2 O4",
+        "inchikey": "MUBZPKHOEPUJKR-UHFFFAOYSA-L",
+        "smiles": "C(=O)(C(=O)[O-])[O-]",
+        "carga_formal": -2
+      },
+      "pubchem": {
+        "cid": 971,
+        "titulo": "Oxalic Acid",
+        "formula": "C2H2O4",
+        "inchikey": "MUBZPKHOEPUJKR-UHFFFAOYSA-N",
+        "smiles": "C(=O)(C(=O)O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "MUBZPKHOEPUJKR-UHFFFAOYSA-N",
+        "formula": "C2H2O4"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "C(=O)(C(=O)[O-])[O-]",
+      "rdkit": {
+        "formula": "C2O4-2",
+        "inchikey": "MUBZPKHOEPUJKR-UHFFFAOYSA-L"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=C([O-])C(=O)[O-]",
+      "notas": [
+        "Fórmulas distintas por estado de protonación/carga: CCD C2 O4 vs PubChem C2H2O4."
+      ]
+    },
+    {
+      "id": "malato",
+      "nombre": "L-Malato",
+      "usos": "diap. 42; S3, S13",
+      "ccd": null,
+      "pubchem": {
+        "cid": 222656,
+        "titulo": "L-Malic Acid",
+        "formula": "C4H6O5",
+        "inchikey": "BJEPYKJPYRNKOW-REOHCLBHSA-N",
+        "smiles": "C([C@@H](C(=O)O)O)C(=O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "BJEPYKJPYRNKOW-REOHCLBHSA-N",
+        "formula": "C4H6O5"
+      },
+      "fuente_smiles": "PubChem",
+      "smiles": "C([C@@H](C(=O)O)O)C(=O)O",
+      "rdkit": {
+        "formula": "C4H6O5",
+        "inchikey": "BJEPYKJPYRNKOW-REOHCLBHSA-N"
+      },
+      "fuentes_externas": [
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=C([O-])C[C@H](O)C(=O)[O-]",
+      "notas": []
+    },
+    {
+      "id": "oxalacetato",
+      "nombre": "Oxalacetato",
+      "usos": "diap. 42, 47; S3, S13",
+      "ccd": {
+        "codigo": "OAA",
+        "nombre": "OXALOACETATE ION",
+        "formula": "C4 H3 O5",
+        "inchikey": "KHPXUQMNIQBQEV-UHFFFAOYSA-M",
+        "smiles": "C(C(=O)C(=O)O)C(=O)[O-]",
+        "carga_formal": -1
+      },
+      "pubchem": {
+        "cid": 970,
+        "titulo": "Oxaloacetic Acid",
+        "formula": "C4H4O5",
+        "inchikey": "KHPXUQMNIQBQEV-UHFFFAOYSA-N",
+        "smiles": "C(C(=O)C(=O)O)C(=O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "KHPXUQMNIQBQEV-UHFFFAOYSA-N",
+        "formula": "C4H4O5"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "C(C(=O)C(=O)O)C(=O)[O-]",
+      "rdkit": {
+        "formula": "C4H3O5-",
+        "inchikey": "KHPXUQMNIQBQEV-UHFFFAOYSA-M"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=C([O-])CC(=O)C(=O)[O-]",
+      "notas": [
+        "Fórmulas distintas por estado de protonación/carga: CCD C4 H3 O5 vs PubChem C4H4O5."
+      ]
+    },
+    {
+      "id": "lactosa",
+      "nombre": "Lactosa (β-D-galactopiranosil-(1→4)-D-glucosa)",
+      "usos": "diap. 44; S13",
+      "ccd": null,
+      "pubchem": {
+        "cid": 6134,
+        "titulo": "beta-Lactose",
+        "formula": "C12H22O11",
+        "inchikey": "GUBGYTABKSRVRQ-DCSYEGIMSA-N",
+        "smiles": "C([C@@H]1[C@@H]([C@@H]([C@H]([C@@H](O1)O[C@@H]2[C@H](O[C@H]([C@@H]([C@H]2O)O)O)CO)O)O)O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "GUBGYTABKSRVRQ-DCSYEGIMSA-N",
+        "formula": "C12H22O11"
+      },
+      "fuente_smiles": "PubChem",
+      "smiles": "C([C@@H]1[C@@H]([C@@H]([C@H]([C@@H](O1)O[C@@H]2[C@H](O[C@H]([C@@H]([C@H]2O)O)O)CO)O)O)O)O",
+      "rdkit": {
+        "formula": "C12H22O11",
+        "inchikey": "GUBGYTABKSRVRQ-DCSYEGIMSA-N"
+      },
+      "fuentes_externas": [
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "OC[C@H]1O[C@@H](O[C@H]2[C@H](O)[C@@H](O)[C@H](O)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@H]1O",
+      "notas": []
+    },
+    {
+      "id": "galactosa",
+      "nombre": "D-Galactosa",
+      "usos": "diap. 44; S13",
+      "ccd": {
+        "codigo": "GAL",
+        "nombre": "beta-D-galactopyranose",
+        "formula": "C6 H12 O6",
+        "inchikey": "WQZGKKKJIJFFOK-FPRJBGLDSA-N",
+        "smiles": "C([C@@H]1[C@@H]([C@@H]([C@H]([C@@H](O1)O)O)O)O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 439353,
+        "titulo": "beta-D-Galactopyranose",
+        "formula": "C6H12O6",
+        "inchikey": "WQZGKKKJIJFFOK-FPRJBGLDSA-N",
+        "smiles": "C([C@@H]1[C@@H]([C@@H]([C@H]([C@@H](O1)O)O)O)O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "WQZGKKKJIJFFOK-FPRJBGLDSA-N",
+        "formula": "C6H12O6"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "C([C@@H]1[C@@H]([C@@H]([C@H]([C@@H](O1)O)O)O)O)O",
+      "rdkit": {
+        "formula": "C6H12O6",
+        "inchikey": "WQZGKKKJIJFFOK-FPRJBGLDSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "OC[C@H]1O[C@@H](O)[C@H](O)[C@@H](O)[C@H]1O",
+      "notas": []
+    },
+    {
+      "id": "atp",
+      "nombre": "ATP",
+      "usos": "diap. 35–37, 43, 47; S11",
+      "ccd": {
+        "codigo": "ATP",
+        "nombre": "ADENOSINE-5'-TRIPHOSPHATE",
+        "formula": "C10 H16 N5 O13 P3",
+        "inchikey": "ZKHQWZAMYRWXGA-KQYNXXCUSA-N",
+        "smiles": "c1nc(c2c(n1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)CO[P@@](=O)(O)O[P@](=O)(O)OP(=O)(O)O)O)O)N",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 5957,
+        "titulo": "5'-Atp",
+        "formula": "C10H16N5O13P3",
+        "inchikey": "ZKHQWZAMYRWXGA-KQYNXXCUSA-N",
+        "smiles": "C1=NC(=C2C(=N1)N(C=N2)[C@H]3[C@@H]([C@@H]([C@H](O3)COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O)O)N"
+      },
+      "nci_cadd": {
+        "inchikey": "ZKHQWZAMYRWXGA-KQYNXXCUSA-N",
+        "formula": "C10H16N5O13P3"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "c1nc(c2c(n1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)CO[P@@](=O)(O)O[P@](=O)(O)OP(=O)(O)O)O)O)N",
+      "rdkit": {
+        "formula": "C10H16N5O13P3",
+        "inchikey": "ZKHQWZAMYRWXGA-KQYNXXCUSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](CO[P@@](=O)([O-])O[P@](=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O",
+      "notas": []
+    },
+    {
+      "id": "adp",
+      "nombre": "ADP",
+      "usos": "diap. 36, 43; S11",
+      "ccd": {
+        "codigo": "ADP",
+        "nombre": "ADENOSINE-5'-DIPHOSPHATE",
+        "formula": "C10 H15 N5 O10 P2",
+        "inchikey": "XTWYTFMLZFPYCI-KQYNXXCUSA-N",
+        "smiles": "c1nc(c2c(n1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)CO[P@](=O)(O)OP(=O)(O)O)O)O)N",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 6022,
+        "titulo": "5'-Adp",
+        "formula": "C10H15N5O10P2",
+        "inchikey": "XTWYTFMLZFPYCI-KQYNXXCUSA-N",
+        "smiles": "C1=NC(=C2C(=N1)N(C=N2)[C@H]3[C@@H]([C@@H]([C@H](O3)COP(=O)(O)OP(=O)(O)O)O)O)N"
+      },
+      "nci_cadd": {
+        "inchikey": "XTWYTFMLZFPYCI-KQYNXXCUSA-N",
+        "formula": "C10H15N5O10P2"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "c1nc(c2c(n1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)CO[P@](=O)(O)OP(=O)(O)O)O)O)N",
+      "rdkit": {
+        "formula": "C10H15N5O10P2",
+        "inchikey": "XTWYTFMLZFPYCI-KQYNXXCUSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](CO[P@](=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O",
+      "notas": []
+    },
+    {
+      "id": "amp",
+      "nombre": "AMP",
+      "usos": "S11",
+      "ccd": {
+        "codigo": "AMP",
+        "nombre": "ADENOSINE MONOPHOSPHATE",
+        "formula": "C10 H14 N5 O7 P",
+        "inchikey": "UDMBCSSLTHHNCD-KQYNXXCUSA-N",
+        "smiles": "c1nc(c2c(n1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)COP(=O)(O)O)O)O)N",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 6083,
+        "titulo": "Adenosine Monophosphate",
+        "formula": "C10H14N5O7P",
+        "inchikey": "UDMBCSSLTHHNCD-KQYNXXCUSA-N",
+        "smiles": "C1=NC(=C2C(=N1)N(C=N2)[C@H]3[C@@H]([C@@H]([C@H](O3)COP(=O)(O)O)O)O)N"
+      },
+      "nci_cadd": {
+        "inchikey": "UDMBCSSLTHHNCD-KQYNXXCUSA-N",
+        "formula": "C10H14N5O7P"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "c1nc(c2c(n1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)COP(=O)(O)O)O)O)N",
+      "rdkit": {
+        "formula": "C10H14N5O7P",
+        "inchikey": "UDMBCSSLTHHNCD-KQYNXXCUSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])[O-])[C@@H](O)[C@H]1O",
+      "notas": []
+    },
+    {
+      "id": "pi",
+      "nombre": "Fosfato inorgánico (Pi)",
+      "usos": "diap. 36; S11",
+      "ccd": {
+        "codigo": "PO4",
+        "nombre": "PHOSPHATE ION",
+        "formula": "O4 P",
+        "inchikey": "NBIIXXVUZAFLBC-UHFFFAOYSA-K",
+        "smiles": "[O-]P(=O)([O-])[O-]",
+        "carga_formal": -3
+      },
+      "pubchem": {
+        "cid": 1061,
+        "titulo": "Phosphate",
+        "formula": "O4P-3",
+        "inchikey": "NBIIXXVUZAFLBC-UHFFFAOYSA-K",
+        "smiles": "[O-]P(=O)([O-])[O-]"
+      },
+      "nci_cadd": {
+        "inchikey": "NBIIXXVUZAFLBC-UHFFFAOYSA-K",
+        "formula": "O4P"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "[O-]P(=O)([O-])[O-]",
+      "rdkit": {
+        "formula": "O4P-3",
+        "inchikey": "NBIIXXVUZAFLBC-UHFFFAOYSA-K"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=P([O-])([O-])[O-]",
+      "notas": [
+        "Fórmulas distintas por estado de protonación/carga: CCD O4 P vs PubChem O4P-3."
+      ]
+    },
+    {
+      "id": "ppi",
+      "nombre": "Pirofosfato (PPi)",
+      "usos": "diap. 15; S11",
+      "ccd": {
+        "codigo": "POP",
+        "nombre": "PYROPHOSPHATE 2-",
+        "formula": "H2 O7 P2",
+        "inchikey": "XPPKVPWEQAFLFU-UHFFFAOYSA-L",
+        "smiles": "O[P@@](=O)([O-])O[P@@](=O)(O)[O-]",
+        "carga_formal": -2
+      },
+      "pubchem": {
+        "cid": 644102,
+        "titulo": "Pyrophosphate",
+        "formula": "O7P2-4",
+        "inchikey": "XPPKVPWEQAFLFU-UHFFFAOYSA-J",
+        "smiles": "[O-]P(=O)([O-])OP(=O)([O-])[O-]"
+      },
+      "nci_cadd": {
+        "inchikey": "XPPKVPWEQAFLFU-UHFFFAOYSA-J",
+        "formula": "O7P2"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "O[P@@](=O)([O-])O[P@@](=O)(O)[O-]",
+      "rdkit": {
+        "formula": "H2O7P2-2",
+        "inchikey": "XPPKVPWEQAFLFU-UHFFFAOYSA-L"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=P([O-])([O-])OP(=O)([O-])[O-]",
+      "notas": [
+        "Fórmulas distintas por estado de protonación/carga: CCD H2 O7 P2 vs PubChem O7P2-4."
+      ]
+    },
+    {
+      "id": "bpg13",
+      "nombre": "1,3-Bisfosfoglicerato",
+      "usos": "S11 (escala de potencial de transferencia)",
+      "ccd": null,
+      "pubchem": {
+        "cid": 439191,
+        "titulo": "3-phospho-D-glyceroyl dihydrogen phosphate",
+        "formula": "C3H8O10P2",
+        "inchikey": "LJQLQCAXBUHEAZ-UWTATZPHSA-N",
+        "smiles": "C([C@H](C(=O)OP(=O)(O)O)O)OP(=O)(O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "LJQLQCAXBUHEAZ-UWTATZPHSA-N",
+        "formula": "C3H8O10P2"
+      },
+      "fuente_smiles": "PubChem",
+      "smiles": "C([C@H](C(=O)OP(=O)(O)O)O)OP(=O)(O)O",
+      "rdkit": {
+        "formula": "C3H8O10P2",
+        "inchikey": "LJQLQCAXBUHEAZ-UWTATZPHSA-N"
+      },
+      "fuentes_externas": [
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=C(OP(=O)([O-])[O-])[C@H](O)COP(=O)([O-])[O-]",
+      "notas": []
+    },
+    {
+      "id": "fosfocreatina",
+      "nombre": "Fosfocreatina",
+      "usos": "S11 (escala de potencial de transferencia)",
+      "ccd": null,
+      "pubchem": {
+        "cid": 9548602,
+        "titulo": "Phosphocreatine",
+        "formula": "C4H10N3O5P",
+        "inchikey": "DRBBFCLWYRJSJZ-UHFFFAOYSA-N",
+        "smiles": "CN(CC(=O)O)/C(=N/P(=O)(O)O)/N"
+      },
+      "nci_cadd": {
+        "inchikey": "CFPWPNDPUSLDPF-UHFFFAOYSA-N",
+        "formula": "C4H10N3O5P"
+      },
+      "fuente_smiles": "PubChem",
+      "smiles": "CN(CC(=O)O)/C(=N/P(=O)(O)O)/N",
+      "rdkit": {
+        "formula": "C4H10N3O5P",
+        "inchikey": "DRBBFCLWYRJSJZ-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "pubchem",
+        "nci"
+      ],
+      "estado": "no verificado",
+      "smiles_dibujo_ph7": "CN(CC(=O)[O-])/C(N)=N/P(=O)([O-])[O-]",
+      "notas": [
+        "DISCREPANCIA de conectividad (posible tautomería/isomería si la fórmula coincide): {'pubchem': 'DRBBFCLWYRJSJZ-UHFFFAOYSA-N', 'nci': 'CFPWPNDPUSLDPF-UHFFFAOYSA-N', 'rdkit': 'DRBBFCLWYRJSJZ-UHFFFAOYSA-N'}"
+      ]
+    },
+    {
+      "id": "ap5a",
+      "nombre": "Ap5A (P1,P5-di(adenosina-5')-pentafosfato)",
+      "usos": "1AKE; S7",
+      "ccd": {
+        "codigo": "AP5",
+        "nombre": "BIS(ADENOSINE)-5'-PENTAPHOSPHATE",
+        "formula": "C20 H29 N10 O22 P5",
+        "inchikey": "OIMACDRJUANHTJ-XPWFQUROSA-N",
+        "smiles": "c1nc(c2c(n1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)CO[P@](=O)(O)O[P@](=O)(O)OP(=O)(O)O[P@@](=O)(O)O[P@@](=O)(O)OC[C@@H]4[C@H]([C@H]([C@@H](O4)n5cnc6c5ncnc6N)O)O)O)O)N",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 440210,
+        "titulo": "Bis(Adenosine)-5'-Pentaphosphate",
+        "formula": "C20H29N10O22P5",
+        "inchikey": "OIMACDRJUANHTJ-XPWFQUROSA-N",
+        "smiles": "C1=NC(=C2C(=N1)N(C=N2)[C@H]3[C@@H]([C@@H]([C@H](O3)COP(=O)(O)OP(=O)(O)OP(=O)(O)OP(=O)(O)OP(=O)(O)OC[C@@H]4[C@H]([C@H]([C@@H](O4)N5C=NC6=C(N=CN=C65)N)O)O)O)O)N"
+      },
+      "nci_cadd": {
+        "inchikey": "OIMACDRJUANHTJ-XPWFQUROSA-N",
+        "formula": "C20H29N10O22P5"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "c1nc(c2c(n1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)CO[P@](=O)(O)O[P@](=O)(O)OP(=O)(O)O[P@@](=O)(O)O[P@@](=O)(O)OC[C@@H]4[C@H]([C@H]([C@@H](O4)n5cnc6c5ncnc6N)O)O)O)O)N",
+      "rdkit": {
+        "formula": "C20H29N10O22P5",
+        "inchikey": "OIMACDRJUANHTJ-XPWFQUROSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](CO[P@](=O)([O-])O[P@](=O)([O-])OP(=O)([O-])O[P@@](=O)([O-])O[P@@](=O)([O-])OC[C@H]2O[C@@H](n3cnc4c(N)ncnc43)[C@H](O)[C@@H]2O)[C@@H](O)[C@H]1O",
+      "notas": []
+    },
+    {
+      "id": "nad",
+      "nombre": "NAD⁺",
+      "usos": "diap. 38, 42; S12",
+      "ccd": {
+        "codigo": "NAD",
+        "nombre": "NICOTINAMIDE-ADENINE-DINUCLEOTIDE",
+        "formula": "C21 H27 N7 O14 P2",
+        "inchikey": "BAWFJGJZGIEFAR-NNYOXOHSSA-N",
+        "smiles": "c1cc(c[n+](c1)[C@H]2[C@@H]([C@@H]([C@H](O2)CO[P@@](=O)([O-])O[P@@](=O)(O)OC[C@@H]3[C@H]([C@H]([C@@H](O3)n4cnc5c4ncnc5N)O)O)O)O)C(=O)N",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 5892,
+        "titulo": "Nadide",
+        "formula": "C21H27N7O14P2",
+        "inchikey": "BAWFJGJZGIEFAR-NNYOXOHSSA-N",
+        "smiles": "C1=CC(=C[N+](=C1)[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)([O-])OP(=O)(O)OC[C@@H]3[C@H]([C@H]([C@@H](O3)N4C=NC5=C(N=CN=C54)N)O)O)O)O)C(=O)N"
+      },
+      "nci_cadd": {
+        "inchikey": "BAWFJGJZGIEFAR-UHFFFAOYSA-N",
+        "formula": "C21H27N7O14P2"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "c1cc(c[n+](c1)[C@H]2[C@@H]([C@@H]([C@H](O2)CO[P@@](=O)([O-])O[P@@](=O)(O)OC[C@@H]3[C@H]([C@H]([C@@H](O3)n4cnc5c4ncnc5N)O)O)O)O)C(=O)N",
+      "rdkit": {
+        "formula": "C21H27N7O14P2",
+        "inchikey": "BAWFJGJZGIEFAR-NNYOXOHSSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "NC(=O)c1ccc[n+]([C@@H]2O[C@H](CO[P@@](=O)([O-])O[P@@](=O)([O-])OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](O)[C@@H]3O)[C@@H](O)[C@H]2O)c1",
+      "notas": [
+        "Alguna fuente no especifica estereoquímica (UHFFFAOYSA); se conserva la de la fuente que sí la define."
+      ]
+    },
+    {
+      "id": "nadh",
+      "nombre": "NADH",
+      "usos": "diap. 38; S12",
+      "ccd": {
+        "codigo": "NAI",
+        "nombre": "1,4-DIHYDRONICOTINAMIDE ADENINE DINUCLEOTIDE",
+        "formula": "C21 H29 N7 O14 P2",
+        "inchikey": "BOPGDPNILDQYTO-NNYOXOHSSA-N",
+        "smiles": "c1nc(c2c(n1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)CO[P@](=O)(O)O[P@@](=O)(O)OC[C@@H]4[C@H]([C@H]([C@@H](O4)N5C=CCC(=C5)C(=O)N)O)O)O)O)N",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 439153,
+        "titulo": "Nadh",
+        "formula": "C21H29N7O14P2",
+        "inchikey": "BOPGDPNILDQYTO-NNYOXOHSSA-N",
+        "smiles": "C1C=CN(C=C1C(=O)N)[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)OP(=O)(O)OC[C@@H]3[C@H]([C@H]([C@@H](O3)N4C=NC5=C(N=CN=C54)N)O)O)O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "BOPGDPNILDQYTO-UHFFFAOYSA-N",
+        "formula": "C21H29N7O14P2"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "c1nc(c2c(n1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)CO[P@](=O)(O)O[P@@](=O)(O)OC[C@@H]4[C@H]([C@H]([C@@H](O4)N5C=CCC(=C5)C(=O)N)O)O)O)O)N",
+      "rdkit": {
+        "formula": "C21H29N7O14P2",
+        "inchikey": "BOPGDPNILDQYTO-NNYOXOHSSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "NC(=O)C1=CN([C@@H]2O[C@H](CO[P@](=O)([O-])O[P@@](=O)([O-])OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1",
+      "notas": [
+        "Alguna fuente no especifica estereoquímica (UHFFFAOYSA); se conserva la de la fuente que sí la define."
+      ]
+    },
+    {
+      "id": "nadp",
+      "nombre": "NADP⁺",
+      "usos": "diap. 38; S12",
+      "ccd": {
+        "codigo": "NAP",
+        "nombre": "NADP NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+        "formula": "C21 H28 N7 O17 P3",
+        "inchikey": "XJLXINKUBYWONI-NNYOXOHSSA-N",
+        "smiles": "c1cc(c[n+](c1)[C@H]2[C@@H]([C@@H]([C@H](O2)CO[P@@](=O)([O-])O[P@](=O)(O)OC[C@@H]3[C@H]([C@H]([C@@H](O3)n4cnc5c4ncnc5N)OP(=O)(O)O)O)O)O)C(=O)N",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 5885,
+        "titulo": "Nadp",
+        "formula": "C21H28N7O17P3",
+        "inchikey": "XJLXINKUBYWONI-NNYOXOHSSA-N",
+        "smiles": "C1=CC(=C[N+](=C1)[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)([O-])OP(=O)(O)OC[C@@H]3[C@H]([C@H]([C@@H](O3)N4C=NC5=C(N=CN=C54)N)OP(=O)(O)O)O)O)O)C(=O)N"
+      },
+      "nci_cadd": {
+        "inchikey": "XJLXINKUBYWONI-UHFFFAOYSA-O",
+        "formula": "C21H29N7O17P3"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "c1cc(c[n+](c1)[C@H]2[C@@H]([C@@H]([C@H](O2)CO[P@@](=O)([O-])O[P@](=O)(O)OC[C@@H]3[C@H]([C@H]([C@@H](O3)n4cnc5c4ncnc5N)OP(=O)(O)O)O)O)O)C(=O)N",
+      "rdkit": {
+        "formula": "C21H28N7O17P3",
+        "inchikey": "XJLXINKUBYWONI-NNYOXOHSSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "NC(=O)c1ccc[n+]([C@@H]2O[C@H](CO[P@@](=O)([O-])O[P@](=O)([O-])OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)([O-])[O-])[C@@H]3O)[C@@H](O)[C@H]2O)c1",
+      "notas": [
+        "Alguna fuente no especifica estereoquímica (UHFFFAOYSA); se conserva la de la fuente que sí la define."
+      ]
+    },
+    {
+      "id": "nadph",
+      "nombre": "NADPH",
+      "usos": "1U72; S12, S18",
+      "ccd": {
+        "codigo": "NDP",
+        "nombre": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+        "formula": "C21 H30 N7 O17 P3",
+        "inchikey": "ACFIXJIJDZMPPO-NNYOXOHSSA-N",
+        "smiles": "c1nc(c2c(n1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)CO[P@](=O)(O)O[P@@](=O)(O)OC[C@@H]4[C@H]([C@H]([C@@H](O4)N5C=CCC(=C5)C(=O)N)O)O)O)OP(=O)(O)O)N",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 5884,
+        "titulo": "NADPH",
+        "formula": "C21H30N7O17P3",
+        "inchikey": "ACFIXJIJDZMPPO-NNYOXOHSSA-N",
+        "smiles": "C1C=CN(C=C1C(=O)N)[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)OP(=O)(O)OC[C@@H]3[C@H]([C@H]([C@@H](O3)N4C=NC5=C(N=CN=C54)N)OP(=O)(O)O)O)O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "ACFIXJIJDZMPPO-UHFFFAOYSA-N",
+        "formula": "C21H30N7O17P3"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "c1nc(c2c(n1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)CO[P@](=O)(O)O[P@@](=O)(O)OC[C@@H]4[C@H]([C@H]([C@@H](O4)N5C=CCC(=C5)C(=O)N)O)O)O)OP(=O)(O)O)N",
+      "rdkit": {
+        "formula": "C21H30N7O17P3",
+        "inchikey": "ACFIXJIJDZMPPO-NNYOXOHSSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "NC(=O)C1=CN([C@@H]2O[C@H](CO[P@](=O)([O-])O[P@@](=O)([O-])OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)([O-])[O-])[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1",
+      "notas": [
+        "Alguna fuente no especifica estereoquímica (UHFFFAOYSA); se conserva la de la fuente que sí la define."
+      ]
+    },
+    {
+      "id": "fad",
+      "nombre": "FAD",
+      "usos": "diap. 39; S12",
+      "ccd": {
+        "codigo": "FAD",
+        "nombre": "FLAVIN-ADENINE DINUCLEOTIDE",
+        "formula": "C27 H33 N9 O15 P2",
+        "inchikey": "VWWQXMAJTJZDQX-UYBVJOGSSA-N",
+        "smiles": "Cc1cc2c(cc1C)N(C3=NC(=O)NC(=O)C3=N2)C[C@@H]([C@@H]([C@@H](CO[P@@](=O)(O)O[P@](=O)(O)OC[C@@H]4[C@H]([C@H]([C@@H](O4)n5cnc6c5ncnc6N)O)O)O)O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 643975,
+        "titulo": "Flavin Adenine Dinucleotide",
+        "formula": "C27H33N9O15P2",
+        "inchikey": "VWWQXMAJTJZDQX-UYBVJOGSSA-N",
+        "smiles": "CC1=CC2=C(C=C1C)N(C3=NC(=O)NC(=O)C3=N2)C[C@@H]([C@@H]([C@@H](COP(=O)(O)OP(=O)(O)OC[C@@H]4[C@H]([C@H]([C@@H](O4)N5C=NC6=C(N=CN=C65)N)O)O)O)O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "VWWQXMAJTJZDQX-UHFFFAOYSA-N",
+        "formula": "C27H33N9O15P2"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "Cc1cc2c(cc1C)N(C3=NC(=O)NC(=O)C3=N2)C[C@@H]([C@@H]([C@@H](CO[P@@](=O)(O)O[P@](=O)(O)OC[C@@H]4[C@H]([C@H]([C@@H](O4)n5cnc6c5ncnc6N)O)O)O)O)O",
+      "rdkit": {
+        "formula": "C27H33N9O15P2",
+        "inchikey": "VWWQXMAJTJZDQX-UYBVJOGSSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "Cc1cc2nc3c(=O)[nH]c(=O)nc-3n(C[C@H](O)[C@H](O)[C@H](O)CO[P@@](=O)([O-])O[P@](=O)([O-])OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](O)[C@@H]3O)c2cc1C",
+      "notas": [
+        "Alguna fuente no especifica estereoquímica (UHFFFAOYSA); se conserva la de la fuente que sí la define."
+      ]
+    },
+    {
+      "id": "fadh2",
+      "nombre": "FADH₂",
+      "usos": "diap. 39; S12",
+      "ccd": {
+        "codigo": "FDA",
+        "nombre": "DIHYDROFLAVINE-ADENINE DINUCLEOTIDE",
+        "formula": "C27 H35 N9 O15 P2",
+        "inchikey": "YPZRHBJKEMOYQH-UYBVJOGSSA-N",
+        "smiles": "Cc1cc2c(cc1C)N(C3=C(N2)C(=O)NC(=O)N3)C[C@@H]([C@@H]([C@@H](CO[P@@](=O)(O)O[P@@](=O)(O)OC[C@@H]4[C@H]([C@H]([C@@H](O4)n5cnc6c5ncnc6N)O)O)O)O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 446013,
+        "titulo": "Fadh2",
+        "formula": "C27H35N9O15P2",
+        "inchikey": "YPZRHBJKEMOYQH-UYBVJOGSSA-N",
+        "smiles": "CC1=CC2=C(C=C1C)N(C3=C(N2)C(=O)NC(=O)N3)C[C@@H]([C@@H]([C@@H](COP(=O)(O)OP(=O)(O)OC[C@@H]4[C@H]([C@H]([C@@H](O4)N5C=NC6=C(N=CN=C65)N)O)O)O)O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "YPZRHBJKEMOYQH-UHFFFAOYSA-N",
+        "formula": "C27H35N9O15P2"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "Cc1cc2c(cc1C)N(C3=C(N2)C(=O)NC(=O)N3)C[C@@H]([C@@H]([C@@H](CO[P@@](=O)(O)O[P@@](=O)(O)OC[C@@H]4[C@H]([C@H]([C@@H](O4)n5cnc6c5ncnc6N)O)O)O)O)O",
+      "rdkit": {
+        "formula": "C27H35N9O15P2",
+        "inchikey": "YPZRHBJKEMOYQH-UYBVJOGSSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "Cc1cc2c(cc1C)N(C[C@H](O)[C@H](O)[C@H](O)CO[P@@](=O)([O-])O[P@@](=O)([O-])OC[C@H]1O[C@@H](n3cnc4c(N)ncnc43)[C@H](O)[C@@H]1O)c1[nH]c(=O)[nH]c(=O)c1N2",
+      "notas": [
+        "Alguna fuente no especifica estereoquímica (UHFFFAOYSA); se conserva la de la fuente que sí la define."
+      ]
+    },
+    {
+      "id": "fmn",
+      "nombre": "FMN",
+      "usos": "diap. 39; S12",
+      "ccd": {
+        "codigo": "FMN",
+        "nombre": "FLAVIN MONONUCLEOTIDE",
+        "formula": "C17 H21 N4 O9 P",
+        "inchikey": "FVTCRASFADXXNN-SCRDCRAPSA-N",
+        "smiles": "Cc1cc2c(cc1C)N(C3=NC(=O)NC(=O)C3=N2)C[C@@H]([C@@H]([C@@H](COP(=O)(O)O)O)O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 643976,
+        "titulo": "Flavin Mononucleotide",
+        "formula": "C17H21N4O9P",
+        "inchikey": "FVTCRASFADXXNN-SCRDCRAPSA-N",
+        "smiles": "CC1=CC2=C(C=C1C)N(C3=NC(=O)NC(=O)C3=N2)C[C@@H]([C@@H]([C@@H](COP(=O)(O)O)O)O)O"
+      },
+      "nci_cadd": null,
+      "fuente_smiles": "CCD",
+      "smiles": "Cc1cc2c(cc1C)N(C3=NC(=O)NC(=O)C3=N2)C[C@@H]([C@@H]([C@@H](COP(=O)(O)O)O)O)O",
+      "rdkit": {
+        "formula": "C17H21N4O9P",
+        "inchikey": "FVTCRASFADXXNN-SCRDCRAPSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "Cc1cc2nc3c(=O)[nH]c(=O)nc-3n(C[C@H](O)[C@H](O)[C@H](O)COP(=O)([O-])[O-])c2cc1C",
+      "notas": []
+    },
+    {
+      "id": "etanol",
+      "nombre": "Etanol",
+      "usos": "diap. 48; S12, S13",
+      "ccd": {
+        "codigo": "EOH",
+        "nombre": "ETHANOL",
+        "formula": "C2 H6 O",
+        "inchikey": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+        "smiles": "CCO",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 702,
+        "titulo": "Ethanol",
+        "formula": "C2H6O",
+        "inchikey": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+        "smiles": "CCO"
+      },
+      "nci_cadd": {
+        "inchikey": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+        "formula": "C2H6O"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "CCO",
+      "rdkit": {
+        "formula": "C2H6O",
+        "inchikey": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "CCO",
+      "notas": []
+    },
+    {
+      "id": "acetaldehido",
+      "nombre": "Acetaldehído",
+      "usos": "diap. 48; S13",
+      "ccd": null,
+      "pubchem": {
+        "cid": 177,
+        "titulo": "Acetaldehyde",
+        "formula": "C2H4O",
+        "inchikey": "IKHGUXGNUITLKF-UHFFFAOYSA-N",
+        "smiles": "CC=O"
+      },
+      "nci_cadd": {
+        "inchikey": "IKHGUXGNUITLKF-UHFFFAOYSA-N",
+        "formula": "C2H4O"
+      },
+      "fuente_smiles": "PubChem",
+      "smiles": "CC=O",
+      "rdkit": {
+        "formula": "C2H4O",
+        "inchikey": "IKHGUXGNUITLKF-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "CC=O",
+      "notas": []
+    },
+    {
+      "id": "maleato",
+      "nombre": "Maleato",
+      "usos": "diap. 48; S13",
+      "ccd": {
+        "codigo": "MAE",
+        "nombre": "MALEIC ACID",
+        "formula": "C4 H4 O4",
+        "inchikey": "VZCYOOQTPOCHFL-UPHRSURJSA-N",
+        "smiles": "C(=C/C(=O)O)/C(=O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 444266,
+        "titulo": "Maleic Acid",
+        "formula": "C4H4O4",
+        "inchikey": "VZCYOOQTPOCHFL-UPHRSURJSA-N",
+        "smiles": "C(=C\\C(=O)O)\\C(=O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "VZCYOOQTPOCHFL-UPHRSURJSA-N",
+        "formula": "C4H4O4"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "C(=C/C(=O)O)/C(=O)O",
+      "rdkit": {
+        "formula": "C4H4O4",
+        "inchikey": "VZCYOOQTPOCHFL-UPHRSURJSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=C([O-])/C=C\\C(=O)[O-]",
+      "notas": []
+    },
+    {
+      "id": "fumarato",
+      "nombre": "Fumarato",
+      "usos": "diap. 48; S13",
+      "ccd": {
+        "codigo": "FUM",
+        "nombre": "FUMARIC ACID",
+        "formula": "C4 H4 O4",
+        "inchikey": "VZCYOOQTPOCHFL-OWOJBTEDSA-N",
+        "smiles": "C(=C/C(=O)O)\\C(=O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 444972,
+        "titulo": "Fumaric Acid",
+        "formula": "C4H4O4",
+        "inchikey": "VZCYOOQTPOCHFL-OWOJBTEDSA-N",
+        "smiles": "C(=C/C(=O)O)\\C(=O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "VZCYOOQTPOCHFL-OWOJBTEDSA-N",
+        "formula": "C4H4O4"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "C(=C/C(=O)O)\\C(=O)O",
+      "rdkit": {
+        "formula": "C4H4O4",
+        "inchikey": "VZCYOOQTPOCHFL-OWOJBTEDSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=C([O-])/C=C/C(=O)[O-]",
+      "notas": []
+    },
+    {
+      "id": "oxamato",
+      "nombre": "Oxamato (análogo del piruvato)",
+      "usos": "1I10; S12",
+      "ccd": {
+        "codigo": "OXM",
+        "nombre": "OXAMIC ACID",
+        "formula": "C2 H3 N O3",
+        "inchikey": "SOWBFZRMHSNYGE-UHFFFAOYSA-N",
+        "smiles": "C(=O)(C(=O)O)N",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 974,
+        "titulo": "Oxamic Acid",
+        "formula": "C2H3NO3",
+        "inchikey": "SOWBFZRMHSNYGE-UHFFFAOYSA-N",
+        "smiles": "C(=O)(C(=O)O)N"
+      },
+      "nci_cadd": {
+        "inchikey": "SOWBFZRMHSNYGE-UHFFFAOYSA-N",
+        "formula": "C2H3NO3"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "C(=O)(C(=O)O)N",
+      "rdkit": {
+        "formula": "C2H3NO3",
+        "inchikey": "SOWBFZRMHSNYGE-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "NC(=O)C(=O)[O-]",
+      "notas": []
+    },
+    {
+      "id": "citrato",
+      "nombre": "Citrato",
+      "usos": "1EMD; S13",
+      "ccd": {
+        "codigo": "CIT",
+        "nombre": "CITRIC ACID",
+        "formula": "C6 H8 O7",
+        "inchikey": "KRKNYBCHXYNGOX-UHFFFAOYSA-N",
+        "smiles": "C(C(=O)O)C(CC(=O)O)(C(=O)O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 311,
+        "titulo": "Citric Acid",
+        "formula": "C6H8O7",
+        "inchikey": "KRKNYBCHXYNGOX-UHFFFAOYSA-N",
+        "smiles": "C(C(=O)O)C(CC(=O)O)(C(=O)O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "KRKNYBCHXYNGOX-UHFFFAOYSA-N",
+        "formula": "C6H8O7"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "C(C(=O)O)C(CC(=O)O)(C(=O)O)O",
+      "rdkit": {
+        "formula": "C6H8O7",
+        "inchikey": "KRKNYBCHXYNGOX-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=C([O-])CC(O)(CC(=O)[O-])C(=O)[O-]",
+      "notas": []
+    },
+    {
+      "id": "benzoato",
+      "nombre": "Benzoato",
+      "usos": "1KIF; S12",
+      "ccd": {
+        "codigo": "BEZ",
+        "nombre": "BENZOIC ACID",
+        "formula": "C7 H6 O2",
+        "inchikey": "WPYMKLBDIGXBTP-UHFFFAOYSA-N",
+        "smiles": "c1ccc(cc1)C(=O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 243,
+        "titulo": "Benzoic Acid",
+        "formula": "C7H6O2",
+        "inchikey": "WPYMKLBDIGXBTP-UHFFFAOYSA-N",
+        "smiles": "C1=CC=C(C=C1)C(=O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "WPYMKLBDIGXBTP-UHFFFAOYSA-N",
+        "formula": "C7H6O2"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "c1ccc(cc1)C(=O)O",
+      "rdkit": {
+        "formula": "C7H6O2",
+        "inchikey": "WPYMKLBDIGXBTP-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=C([O-])c1ccccc1",
+      "notas": []
+    },
+    {
+      "id": "biotina",
+      "nombre": "Biotina",
+      "usos": "diap. 47; S13",
+      "ccd": {
+        "codigo": "BTN",
+        "nombre": "BIOTIN",
+        "formula": "C10 H16 N2 O3 S",
+        "inchikey": "YBJHBAHKTGYVGT-ZKWXMUAHSA-N",
+        "smiles": "C1[C@H]2[C@@H]([C@@H](S1)CCCCC(=O)O)NC(=O)N2",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 171548,
+        "titulo": "Biotin",
+        "formula": "C10H16N2O3S",
+        "inchikey": "YBJHBAHKTGYVGT-ZKWXMUAHSA-N",
+        "smiles": "C1[C@H]2[C@@H]([C@@H](S1)CCCCC(=O)O)NC(=O)N2"
+      },
+      "nci_cadd": {
+        "inchikey": "YBJHBAHKTGYVGT-UHFFFAOYSA-N",
+        "formula": "C10H16N2O3S"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "C1[C@H]2[C@@H]([C@@H](S1)CCCCC(=O)O)NC(=O)N2",
+      "rdkit": {
+        "formula": "C10H16N2O3S",
+        "inchikey": "YBJHBAHKTGYVGT-ZKWXMUAHSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=C([O-])CCCC[C@@H]1SC[C@@H]2NC(=O)N[C@@H]21",
+      "notas": [
+        "Alguna fuente no especifica estereoquímica (UHFFFAOYSA); se conserva la de la fuente que sí la define."
+      ]
+    },
+    {
+      "id": "h2o2",
+      "nombre": "Peróxido de hidrógeno",
+      "usos": "diap. 12–14; S2, S5",
+      "ccd": {
+        "codigo": "PEO",
+        "nombre": "HYDROGEN PEROXIDE",
+        "formula": "H2 O2",
+        "inchikey": "MHAJPDPJQMAIIY-UHFFFAOYSA-N",
+        "smiles": "OO",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 784,
+        "titulo": "Hydrogen Peroxide",
+        "formula": "H2O2",
+        "inchikey": "MHAJPDPJQMAIIY-UHFFFAOYSA-N",
+        "smiles": "OO"
+      },
+      "nci_cadd": {
+        "inchikey": "MHAJPDPJQMAIIY-UHFFFAOYSA-N",
+        "formula": "H2O2"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "OO",
+      "rdkit": {
+        "formula": "H2O2",
+        "inchikey": "MHAJPDPJQMAIIY-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "OO",
+      "notas": []
+    },
+    {
+      "id": "catecol",
+      "nombre": "Catecol",
+      "usos": "diap. 59; S17",
+      "ccd": {
+        "codigo": "CAQ",
+        "nombre": "CATECHOL",
+        "formula": "C6 H6 O2",
+        "inchikey": "YCIMNLLNPGFGHC-UHFFFAOYSA-N",
+        "smiles": "c1ccc(c(c1)O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 289,
+        "titulo": "Catechol",
+        "formula": "C6H6O2",
+        "inchikey": "YCIMNLLNPGFGHC-UHFFFAOYSA-N",
+        "smiles": "C1=CC=C(C(=C1)O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "YCIMNLLNPGFGHC-UHFFFAOYSA-N",
+        "formula": "C6H6O2"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "c1ccc(c(c1)O)O",
+      "rdkit": {
+        "formula": "C6H6O2",
+        "inchikey": "YCIMNLLNPGFGHC-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "Oc1ccccc1O",
+      "notas": []
+    },
+    {
+      "id": "benzoquinona",
+      "nombre": "1,2-Benzoquinona",
+      "usos": "diap. 59; S17",
+      "ccd": null,
+      "pubchem": {
+        "cid": 11421,
+        "titulo": "1,2-Benzoquinone",
+        "formula": "C6H4O2",
+        "inchikey": "WOAHJDHKFWSLKE-UHFFFAOYSA-N",
+        "smiles": "C1=CC(=O)C(=O)C=C1"
+      },
+      "nci_cadd": {
+        "inchikey": "WOAHJDHKFWSLKE-UHFFFAOYSA-N",
+        "formula": "C6H4O2"
+      },
+      "fuente_smiles": "PubChem",
+      "smiles": "C1=CC(=O)C(=O)C=C1",
+      "rdkit": {
+        "formula": "C6H4O2",
+        "inchikey": "WOAHJDHKFWSLKE-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=C1C=CC=CC1=O",
+      "notas": []
+    },
+    {
+      "id": "metotrexato",
+      "nombre": "Metotrexato",
+      "usos": "1U72; S18",
+      "ccd": {
+        "codigo": "MTX",
+        "nombre": "METHOTREXATE",
+        "formula": "C20 H22 N8 O5",
+        "inchikey": "FBOZXECLQNJBKD-ZDUSSCGKSA-N",
+        "smiles": "CN(Cc1cnc2c(n1)c(nc(n2)N)N)c3ccc(cc3)C(=O)N[C@@H](CCC(=O)O)C(=O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 126941,
+        "titulo": "Methotrexate",
+        "formula": "C20H22N8O5",
+        "inchikey": "FBOZXECLQNJBKD-ZDUSSCGKSA-N",
+        "smiles": "CN(CC1=CN=C2C(=N1)C(=NC(=N2)N)N)C3=CC=C(C=C3)C(=O)N[C@@H](CCC(=O)O)C(=O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "FBOZXECLQNJBKD-ZDUSSCGKSA-N",
+        "formula": "C20H22N8O5"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "CN(Cc1cnc2c(n1)c(nc(n2)N)N)c3ccc(cc3)C(=O)N[C@@H](CCC(=O)O)C(=O)O",
+      "rdkit": {
+        "formula": "C20H22N8O5",
+        "inchikey": "FBOZXECLQNJBKD-ZDUSSCGKSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "CN(Cc1cnc2nc(N)nc(N)c2n1)c1ccc(C(=O)N[C@@H](CCC(=O)[O-])C(=O)[O-])cc1",
+      "notas": []
+    },
+    {
+      "id": "folato",
+      "nombre": "Ácido fólico",
+      "usos": "S18",
+      "ccd": {
+        "codigo": "FOL",
+        "nombre": "FOLIC ACID",
+        "formula": "C19 H19 N7 O6",
+        "inchikey": "OVBPIULPVIDEAO-LBPRGKRZSA-N",
+        "smiles": "c1cc(ccc1C(=O)N[C@@H](CCC(=O)O)C(=O)O)NCc2cnc3c(n2)C(=O)N=C(N3)N",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 135398658,
+        "titulo": "Folic Acid",
+        "formula": "C19H19N7O6",
+        "inchikey": "OVBPIULPVIDEAO-LBPRGKRZSA-N",
+        "smiles": "C1=CC(=CC=C1C(=O)N[C@@H](CCC(=O)O)C(=O)O)NCC2=CN=C3C(=N2)C(=O)NC(=N3)N"
+      },
+      "nci_cadd": {
+        "inchikey": "OVBPIULPVIDEAO-LBPRGKRZSA-N",
+        "formula": "C19H19N7O6"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "c1cc(ccc1C(=O)N[C@@H](CCC(=O)O)C(=O)O)NCc2cnc3c(n2)C(=O)N=C(N3)N",
+      "rdkit": {
+        "formula": "C19H19N7O6",
+        "inchikey": "OVBPIULPVIDEAO-LBPRGKRZSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "Nc1nc(=O)c2nc(CNc3ccc(C(=O)N[C@@H](CCC(=O)[O-])C(=O)[O-])cc3)cnc2[nH]1",
+      "notas": []
+    },
+    {
+      "id": "dihidrofolato",
+      "nombre": "7,8-Dihidrofolato",
+      "usos": "S18",
+      "ccd": {
+        "codigo": "DHF",
+        "nombre": "DIHYDROFOLIC ACID",
+        "formula": "C19 H21 N7 O6",
+        "inchikey": "OZRNSSUDZOLUSN-LBPRGKRZSA-N",
+        "smiles": "c1cc(ccc1C(=O)N[C@@H](CCC(=O)O)C(=O)O)NCC2=NC3=C(NC2)NC(=NC3=O)N",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 135398604,
+        "titulo": "Dihydrofolic Acid",
+        "formula": "C19H21N7O6",
+        "inchikey": "OZRNSSUDZOLUSN-LBPRGKRZSA-N",
+        "smiles": "C1C(=NC2=C(N1)N=C(NC2=O)N)CNC3=CC=C(C=C3)C(=O)N[C@@H](CCC(=O)O)C(=O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "OZRNSSUDZOLUSN-LBPRGKRZSA-N",
+        "formula": "C19H21N7O6"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "c1cc(ccc1C(=O)N[C@@H](CCC(=O)O)C(=O)O)NCC2=NC3=C(NC2)NC(=NC3=O)N",
+      "rdkit": {
+        "formula": "C19H21N7O6",
+        "inchikey": "OZRNSSUDZOLUSN-LBPRGKRZSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "Nc1nc(=O)c2c([nH]1)NCC(CNc1ccc(C(=O)N[C@@H](CCC(=O)[O-])C(=O)[O-])cc1)=N2",
+      "notas": []
+    },
+    {
+      "id": "ibuprofeno",
+      "nombre": "Ibuprofeno",
+      "usos": "4PH9; S18, S19",
+      "ccd": {
+        "codigo": "IBP",
+        "nombre": "IBUPROFEN",
+        "formula": "C13 H18 O2",
+        "inchikey": "HEFNNWSXXWATRW-JTQLQIEISA-N",
+        "smiles": "CC(C)Cc1ccc(cc1)[C@H](C)C(=O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 3672,
+        "titulo": "Ibuprofen, (+-)-",
+        "formula": "C13H18O2",
+        "inchikey": "HEFNNWSXXWATRW-UHFFFAOYSA-N",
+        "smiles": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "HEFNNWSXXWATRW-UHFFFAOYSA-N",
+        "formula": "C13H18O2"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "CC(C)Cc1ccc(cc1)[C@H](C)C(=O)O",
+      "rdkit": {
+        "formula": "C13H18O2",
+        "inchikey": "HEFNNWSXXWATRW-JTQLQIEISA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "CC(C)Cc1ccc([C@H](C)C(=O)[O-])cc1",
+      "notas": [
+        "Alguna fuente no especifica estereoquímica (UHFFFAOYSA); se conserva la de la fuente que sí la define."
+      ]
+    },
+    {
+      "id": "aspirina",
+      "nombre": "Aspirina (ácido acetilsalicílico)",
+      "usos": "5F19; S19",
+      "ccd": {
+        "codigo": "AIN",
+        "nombre": "2-(ACETYLOXY)BENZOIC ACID",
+        "formula": "C9 H8 O4",
+        "inchikey": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+        "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 2244,
+        "titulo": "Aspirin",
+        "formula": "C9H8O4",
+        "inchikey": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+        "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+        "formula": "C9H8O4"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+      "rdkit": {
+        "formula": "C9H8O4",
+        "inchikey": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "CC(=O)Oc1ccccc1C(=O)[O-]",
+      "notas": []
+    },
+    {
+      "id": "salicilato",
+      "nombre": "Ácido salicílico",
+      "usos": "S19",
+      "ccd": {
+        "codigo": "SAL",
+        "nombre": "2-HYDROXYBENZOIC ACID",
+        "formula": "C7 H6 O3",
+        "inchikey": "YGSDEFSMJLZEOE-UHFFFAOYSA-N",
+        "smiles": "c1ccc(c(c1)C(=O)O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 338,
+        "titulo": "Salicylic Acid",
+        "formula": "C7H6O3",
+        "inchikey": "YGSDEFSMJLZEOE-UHFFFAOYSA-N",
+        "smiles": "C1=CC=C(C(=C1)C(=O)O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "YGSDEFSMJLZEOE-UHFFFAOYSA-N",
+        "formula": "C7H6O3"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "c1ccc(c(c1)C(=O)O)O",
+      "rdkit": {
+        "formula": "C7H6O3",
+        "inchikey": "YGSDEFSMJLZEOE-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=C([O-])c1ccccc1O",
+      "notas": []
+    },
+    {
+      "id": "nevirapina",
+      "nombre": "Nevirapina",
+      "usos": "1VRT; S18",
+      "ccd": {
+        "codigo": "NVP",
+        "nombre": "11-CYCLOPROPYL-5,11-DIHYDRO-4-METHYL-6H-DIPYRIDO[3,2-B:2',3'-E][1,4]DIAZEPIN-6-ONE",
+        "formula": "C15 H14 N4 O",
+        "inchikey": "NQDJXKOVJZTUJA-UHFFFAOYSA-N",
+        "smiles": "Cc1ccnc2c1NC(=O)c3cccnc3N2C4CC4",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 4463,
+        "titulo": "Nevirapine",
+        "formula": "C15H14N4O",
+        "inchikey": "NQDJXKOVJZTUJA-UHFFFAOYSA-N",
+        "smiles": "CC1=C2C(=NC=C1)N(C3=C(C=CC=N3)C(=O)N2)C4CC4"
+      },
+      "nci_cadd": {
+        "inchikey": "NQDJXKOVJZTUJA-UHFFFAOYSA-N",
+        "formula": "C15H14N4O"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "Cc1ccnc2c1NC(=O)c3cccnc3N2C4CC4",
+      "rdkit": {
+        "formula": "C15H14N4O",
+        "inchikey": "NQDJXKOVJZTUJA-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "Cc1ccnc2c1NC(=O)c1cccnc1N2C1CC1",
+      "notas": []
+    },
+    {
+      "id": "cianuro",
+      "nombre": "Cianuro",
+      "usos": "diap. 61; S19",
+      "ccd": {
+        "codigo": "CYN",
+        "nombre": "CYANIDE ION",
+        "formula": "C N",
+        "inchikey": "XFXPMWWXUTWYJX-UHFFFAOYSA-N",
+        "smiles": "[C-]#N",
+        "carga_formal": -1
+      },
+      "pubchem": {
+        "cid": 5975,
+        "titulo": "Cyanide",
+        "formula": "CN-",
+        "inchikey": "XFXPMWWXUTWYJX-UHFFFAOYSA-N",
+        "smiles": "[C-]#N"
+      },
+      "nci_cadd": {
+        "inchikey": "XFXPMWWXUTWYJX-UHFFFAOYSA-N",
+        "formula": "CN"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "[C-]#N",
+      "rdkit": {
+        "formula": "CN-",
+        "inchikey": "XFXPMWWXUTWYJX-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "[C-]#N",
+      "notas": [
+        "Fórmulas distintas por estado de protonación/carga: CCD C N vs PubChem CN-."
+      ]
+    },
+    {
+      "id": "dfp",
+      "nombre": "Diisopropil fluorofosfato (DFP)",
+      "usos": "diap. 61; S19",
+      "ccd": null,
+      "pubchem": {
+        "cid": 5936,
+        "titulo": "Diisopropyl Fluorophosphate",
+        "formula": "C6H14FO3P",
+        "inchikey": "MUCZHBLJLSDCSD-UHFFFAOYSA-N",
+        "smiles": "CC(C)OP(=O)(OC(C)C)F"
+      },
+      "nci_cadd": {
+        "inchikey": "MUCZHBLJLSDCSD-UHFFFAOYSA-N",
+        "formula": "C6H14FO3P"
+      },
+      "fuente_smiles": "PubChem",
+      "smiles": "CC(C)OP(=O)(OC(C)C)F",
+      "rdkit": {
+        "formula": "C6H14FO3P",
+        "inchikey": "MUCZHBLJLSDCSD-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "CC(C)OP(=O)(F)OC(C)C",
+      "notas": []
+    },
+    {
+      "id": "sarin",
+      "nombre": "Sarín",
+      "usos": "diap. 61; S19",
+      "ccd": null,
+      "pubchem": {
+        "cid": 7871,
+        "titulo": "Sarin",
+        "formula": "C4H10FO2P",
+        "inchikey": "DYAHQFWOVKZOOW-UHFFFAOYSA-N",
+        "smiles": "CC(C)OP(=O)(C)F"
+      },
+      "nci_cadd": {
+        "inchikey": "DYAHQFWOVKZOOW-UHFFFAOYSA-N",
+        "formula": "C4H10FO2P"
+      },
+      "fuente_smiles": "PubChem",
+      "smiles": "CC(C)OP(=O)(C)F",
+      "rdkit": {
+        "formula": "C4H10FO2P",
+        "inchikey": "DYAHQFWOVKZOOW-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "CC(C)OP(C)(=O)F",
+      "notas": []
+    },
+    {
+      "id": "fisostigmina",
+      "nombre": "Fisostigmina",
+      "usos": "diap. 61; S19",
+      "ccd": null,
+      "pubchem": {
+        "cid": 5983,
+        "titulo": "Physostigmine",
+        "formula": "C15H21N3O2",
+        "inchikey": "PIJVFDBKTWXHHD-HIFRSBDPSA-N",
+        "smiles": "C[C@@]12CCN([C@@H]1N(C3=C2C=C(C=C3)OC(=O)NC)C)C"
+      },
+      "nci_cadd": {
+        "inchikey": "PIJVFDBKTWXHHD-HIFRSBDPSA-N",
+        "formula": "C15H21N3O2"
+      },
+      "fuente_smiles": "PubChem",
+      "smiles": "C[C@@]12CCN([C@@H]1N(C3=C2C=C(C=C3)OC(=O)NC)C)C",
+      "rdkit": {
+        "formula": "C15H21N3O2",
+        "inchikey": "PIJVFDBKTWXHHD-HIFRSBDPSA-N"
+      },
+      "fuentes_externas": [
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "CNC(=O)Oc1ccc2c(c1)[C@]1(C)CCN(C)[C@@H]1N2C",
+      "notas": []
+    },
+    {
+      "id": "paration",
+      "nombre": "Paratión",
+      "usos": "diap. 61; S19",
+      "ccd": null,
+      "pubchem": {
+        "cid": 991,
+        "titulo": "Parathion",
+        "formula": "C10H14NO5PS",
+        "inchikey": "LCCNCVORNKJIRZ-UHFFFAOYSA-N",
+        "smiles": "CCOP(=S)(OCC)OC1=CC=C(C=C1)[N+](=O)[O-]"
+      },
+      "nci_cadd": {
+        "inchikey": "LCCNCVORNKJIRZ-UHFFFAOYSA-N",
+        "formula": "C10H14NO5PS"
+      },
+      "fuente_smiles": "PubChem",
+      "smiles": "CCOP(=S)(OCC)OC1=CC=C(C=C1)[N+](=O)[O-]",
+      "rdkit": {
+        "formula": "C10H14NO5PS",
+        "inchikey": "LCCNCVORNKJIRZ-UHFFFAOYSA-N"
+      },
+      "fuentes_externas": [
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "CCOP(=S)(OCC)Oc1ccc([N+](=O)[O-])cc1",
+      "notas": []
+    },
+    {
+      "id": "araquidonico",
+      "nombre": "Ácido araquidónico",
+      "usos": "diap. 65; S19",
+      "ccd": {
+        "codigo": "ACD",
+        "nombre": "ARACHIDONIC ACID",
+        "formula": "C20 H32 O2",
+        "inchikey": "YZXBAPSDXZZRGB-DOFZRALJSA-N",
+        "smiles": "CCCCC\\C=C/C\\C=C/C\\C=C/C\\C=C/CCCC(=O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 444899,
+        "titulo": "Arachidonic Acid",
+        "formula": "C20H32O2",
+        "inchikey": "YZXBAPSDXZZRGB-DOFZRALJSA-N",
+        "smiles": "CCCCC/C=C\\C/C=C\\C/C=C\\C/C=C\\CCCC(=O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "YZXBAPSDXZZRGB-DOFZRALJSA-N",
+        "formula": "C20H32O2"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "CCCCC\\C=C/C\\C=C/C\\C=C/C\\C=C/CCCC(=O)O",
+      "rdkit": {
+        "formula": "C20H32O2",
+        "inchikey": "YZXBAPSDXZZRGB-DOFZRALJSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "CCCCC/C=C\\C/C=C\\C/C=C\\C/C=C\\CCCC(=O)[O-]",
+      "notas": []
+    },
+    {
+      "id": "f16bp",
+      "nombre": "Fructosa-1,6-bisfosfato (F-1,6-BP)",
+      "usos": "PDF glucólisis; S21",
+      "ccd": {
+        "codigo": "FBP",
+        "nombre": "1,6-di-O-phosphono-beta-D-fructofuranose",
+        "formula": "C6 H14 O12 P2",
+        "inchikey": "RNBGYGVWRKECFJ-ARQDHWQXSA-N",
+        "smiles": "C([C@@H]1[C@H]([C@@H]([C@](O1)(COP(=O)(O)O)O)O)O)OP(=O)(O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 10267,
+        "titulo": "1,6-Di-O-phosphono-beta-D-fructofuranose",
+        "formula": "C6H14O12P2",
+        "inchikey": "RNBGYGVWRKECFJ-ARQDHWQXSA-N",
+        "smiles": "C([C@@H]1[C@H]([C@@H]([C@](O1)(COP(=O)(O)O)O)O)O)OP(=O)(O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "RNBGYGVWRKECFJ-ARQDHWQXSA-N",
+        "formula": "C6H14O12P2"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "C([C@@H]1[C@H]([C@@H]([C@](O1)(COP(=O)(O)O)O)O)O)OP(=O)(O)O",
+      "rdkit": {
+        "formula": "C6H14O12P2",
+        "inchikey": "RNBGYGVWRKECFJ-ARQDHWQXSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=P([O-])([O-])OC[C@H]1O[C@](O)(COP(=O)([O-])[O-])[C@@H](O)[C@@H]1O",
+      "notas": []
+    },
+    {
+      "id": "3pg",
+      "nombre": "3-Fosfoglicerato (3PG)",
+      "usos": "PDF glucólisis; S21",
+      "ccd": {
+        "codigo": "3PG",
+        "nombre": "3-PHOSPHOGLYCERIC ACID",
+        "formula": "C3 H7 O7 P",
+        "inchikey": "OSJPPGNTCRNQQC-UWTATZPHSA-N",
+        "smiles": "C([C@H](C(=O)O)O)OP(=O)(O)O",
+        "carga_formal": 0
+      },
+      "pubchem": {
+        "cid": 724,
+        "titulo": "3-Phosphoglycerate",
+        "formula": "C3H7O7P",
+        "inchikey": "OSJPPGNTCRNQQC-UHFFFAOYSA-N",
+        "smiles": "C(C(C(=O)O)O)OP(=O)(O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "OSJPPGNTCRNQQC-UWTATZPHSA-N",
+        "formula": "C3H7O7P"
+      },
+      "fuente_smiles": "CCD",
+      "smiles": "C([C@H](C(=O)O)O)OP(=O)(O)O",
+      "rdkit": {
+        "formula": "C3H7O7P",
+        "inchikey": "OSJPPGNTCRNQQC-UWTATZPHSA-N"
+      },
+      "fuentes_externas": [
+        "ccd",
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "O=C([O-])[C@H](O)COP(=O)([O-])[O-]",
+      "notas": [
+        "Alguna fuente no especifica estereoquímica (UHFFFAOYSA); se conserva la de la fuente que sí la define."
+      ]
+    },
+    {
+      "id": "lactato",
+      "nombre": "L-Lactato",
+      "usos": "PDF glucólisis; S21",
+      "ccd": null,
+      "pubchem": {
+        "cid": 107689,
+        "titulo": "L-Lactic Acid",
+        "formula": "C3H6O3",
+        "inchikey": "JVTAAEKCZFNVCJ-REOHCLBHSA-N",
+        "smiles": "C[C@@H](C(=O)O)O"
+      },
+      "nci_cadd": {
+        "inchikey": "JVTAAEKCZFNVCJ-REOHCLBHSA-N",
+        "formula": "C3H6O3"
+      },
+      "fuente_smiles": "PubChem",
+      "smiles": "C[C@@H](C(=O)O)O",
+      "rdkit": {
+        "formula": "C3H6O3",
+        "inchikey": "JVTAAEKCZFNVCJ-REOHCLBHSA-N"
+      },
+      "fuentes_externas": [
+        "pubchem",
+        "nci"
+      ],
+      "estado": "verificado",
+      "smiles_dibujo_ph7": "C[C@H](O)C(=O)[O-]",
+      "notas": []
+    }
+  ]
+}

@@ -1,0 +1,6076 @@
+{
+  "_nota": "Semilla del manifiesto. scripts/verify_structures.py consulta RCSB, descarga el mmCIF, comprueba residuos (numeración de autor) y mide distancias; luego reescribe este archivo con los campos medidos y el estado. Lo declarado aquí es lo que el HTML afirmará.",
+  "entradas": [
+    {
+      "pdb_id": "1NEY",
+      "secciones": [
+        "S10"
+      ],
+      "organismo_esperado": "Saccharomyces cerevisiae",
+      "titulo_contiene": [
+        "Triosephosphate",
+        "DHAP"
+      ],
+      "ligandos_ccd": [
+        "13P"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 165,
+          "rol": "base general (toma el protón de C2)"
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 95,
+          "rol": "ácido general (cede protón al carbonilo)"
+        },
+        {
+          "chain": "A",
+          "resname": "LYS",
+          "resi": 12,
+          "rol": "estabiliza el fosfato/carbonilo"
+        },
+        {
+          "chain": "A",
+          "resname": "ASN",
+          "resi": 10,
+          "rol": "sitio activo"
+        },
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 97,
+          "rol": "vecino de His95 (rotulado en la diap. 29)"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "glu165_c3",
+          "descripcion": "Glu165 (carboxilato, O más cercano) – C3 del DHAP (el CH₂OH; numeración del CCD '13P')",
+          "a": {
+            "chain": "A",
+            "resi": 165,
+            "atoms": [
+              "OE1",
+              "OE2"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "13P",
+            "atoms": [
+              "C3"
+            ]
+          }
+        },
+        {
+          "id": "his95_o2",
+          "descripcion": "His95 (Nε2) – O2 del DHAP (oxígeno carbonílico; numeración CCD)",
+          "a": {
+            "chain": "A",
+            "resi": 95,
+            "atoms": [
+              "NE2"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "13P",
+            "atoms": [
+              "O2"
+            ]
+          }
+        },
+        {
+          "id": "lys12_o2",
+          "descripcion": "Lys12 (Nζ) – O2 del DHAP (oxígeno carbonílico)",
+          "a": {
+            "chain": "A",
+            "resi": 12,
+            "atoms": [
+              "NZ"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "13P",
+            "atoms": [
+              "O2"
+            ]
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "Sitio activo de la TIM con DHAP: Glu165 como base general y His95 como ácido general (diap. 29–30).",
+      "titulo_rcsb": "Triosephosphate Isomerase in Complex with DHAP",
+      "organismo": [
+        "Saccharomyces cerevisiae"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 1.2,
+      "fecha_deposito": "2002-12-12",
+      "referencia_primaria": {
+        "doi": "10.1073/pnas.0233793100",
+        "cita": "Jogl, G. et al. Optimal alignment for enzymatic proton transfer: Structure of the \nMichaelis complex of triosephosphate isomerase at 1.2-A resolution.. Proc Natl Acad Sci U S A 2003;100:50"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "triosephosphate isomerase",
+          "organismo": [
+            "Saccharomyces cerevisiae"
+          ],
+          "cadenas_auth": [
+            "A",
+            "B"
+          ],
+          "longitud": 247
+        }
+      ],
+      "ligandos_rcsb": [
+        "13P"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/1NEY",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 165,
+          "rol": "base general (toma el protón de C2)",
+          "encontrado": "GLU",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 95,
+          "rol": "ácido general (cede protón al carbonilo)",
+          "encontrado": "HIS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "LYS",
+          "resi": 12,
+          "rol": "estabiliza el fosfato/carbonilo",
+          "encontrado": "LYS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "ASN",
+          "resi": 10,
+          "rol": "sitio activo",
+          "encontrado": "ASN",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 97,
+          "rol": "vecino de His95 (rotulado en la diap. 29)",
+          "encontrado": "GLU",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "glu165_c3",
+          "descripcion": "Glu165 (carboxilato, O más cercano) – C3 del DHAP (el CH₂OH; numeración del CCD '13P')",
+          "a": {
+            "chain": "A",
+            "resi": 165,
+            "atoms": [
+              "OE1",
+              "OE2"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "13P",
+            "atoms": [
+              "C3"
+            ]
+          },
+          "valor_A": 3.06,
+          "atomos": "A:GLU165:OE2 – A:13P5001:C3",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "GLU",
+              "resi": 165,
+              "atom": "OE2"
+            },
+            {
+              "chain": "A",
+              "resname": "13P",
+              "resi": 5001,
+              "atom": "C3"
+            }
+          ]
+        },
+        {
+          "id": "his95_o2",
+          "descripcion": "His95 (Nε2) – O2 del DHAP (oxígeno carbonílico; numeración CCD)",
+          "a": {
+            "chain": "A",
+            "resi": 95,
+            "atoms": [
+              "NE2"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "13P",
+            "atoms": [
+              "O2"
+            ]
+          },
+          "valor_A": 2.72,
+          "atomos": "A:HIS95:NE2 – A:13P5001:O2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "HIS",
+              "resi": 95,
+              "atom": "NE2"
+            },
+            {
+              "chain": "A",
+              "resname": "13P",
+              "resi": 5001,
+              "atom": "O2"
+            }
+          ]
+        },
+        {
+          "id": "lys12_o2",
+          "descripcion": "Lys12 (Nζ) – O2 del DHAP (oxígeno carbonílico)",
+          "a": {
+            "chain": "A",
+            "resi": 12,
+            "atoms": [
+              "NZ"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "13P",
+            "atoms": [
+              "O2"
+            ]
+          },
+          "valor_A": 3.07,
+          "atomos": "A:LYS12:NZ – A:13P5001:O2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "LYS",
+              "resi": 12,
+              "atom": "NZ"
+            },
+            {
+              "chain": "A",
+              "resname": "13P",
+              "resi": 5001,
+              "atom": "O2"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado",
+      "numeracion_nota": "Numeración atómica del CCD '13P': P–O1–C1–C2(=O2)–C3–O3. El fosfato va en C1 y el grupo CH₂OH es C3 (inversa a la numeración IUPAC del DHAP, donde el fosfato está en C3)."
+    },
+    {
+      "pdb_id": "7TIM",
+      "secciones": [
+        "S6",
+        "S10"
+      ],
+      "organismo_esperado": "Saccharomyces cerevisiae",
+      "titulo_contiene": [
+        "PHOSPHOGLYCOLOHYDROXAMATE",
+        "INTERMEDIATE"
+      ],
+      "ligandos_ccd": [
+        "PGH"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 165,
+          "rol": "base general"
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 95,
+          "rol": "ácido general"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "glu165_n2",
+          "descripcion": "Glu165 (carboxilato) – N2 del PGH (N–OH de la hidroxamida, análogo del enediol)",
+          "a": {
+            "chain": "A",
+            "resi": 165,
+            "atoms": [
+              "OE1",
+              "OE2"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "PGH",
+            "atoms": [
+              "N2"
+            ]
+          }
+        },
+        {
+          "id": "his95_o1",
+          "descripcion": "His95 (Nε2) – O1 del PGH (carbonilo de la hidroxamida)",
+          "a": {
+            "chain": "A",
+            "resi": 95,
+            "atoms": [
+              "NE2"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "PGH",
+            "atoms": [
+              "O1"
+            ]
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "PGH es un análogo del intermediario enediol / estado de transición unido a la TIM.",
+      "titulo_rcsb": "STRUCTURE OF THE TRIOSEPHOSPHATE ISOMERASE-PHOSPHOGLYCOLOHYDROXAMATE COMPLEX: AN ANALOGUE OF THE INTERMEDIATE ON THE REACTION PATHWAY",
+      "organismo": [
+        "Saccharomyces cerevisiae"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 1.9,
+      "fecha_deposito": "1991-04-23",
+      "referencia_primaria": {
+        "doi": "10.1021/bi00238a002",
+        "cita": "Davenport, R.C. et al. Structure of the triosephosphate isomerase-phosphoglycolohydroxamate complex: an analogue of the intermediate on the reaction pathway.. Biochemistry 1991;30:5821"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "TRIOSEPHOSPHATE ISOMERASE",
+          "organismo": [
+            "Saccharomyces cerevisiae"
+          ],
+          "cadenas_auth": [
+            "A",
+            "B"
+          ],
+          "longitud": 247
+        }
+      ],
+      "ligandos_rcsb": [
+        "PGH"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/7TIM",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 165,
+          "rol": "base general",
+          "encontrado": "GLU",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 95,
+          "rol": "ácido general",
+          "encontrado": "HIS",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "glu165_n2",
+          "descripcion": "Glu165 (carboxilato) – N2 del PGH (N–OH de la hidroxamida, análogo del enediol)",
+          "a": {
+            "chain": "A",
+            "resi": 165,
+            "atoms": [
+              "OE1",
+              "OE2"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "PGH",
+            "atoms": [
+              "N2"
+            ]
+          },
+          "valor_A": 2.66,
+          "atomos": "A:GLU165:OE2 – A:PGH249:N2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "GLU",
+              "resi": 165,
+              "atom": "OE2"
+            },
+            {
+              "chain": "A",
+              "resname": "PGH",
+              "resi": 249,
+              "atom": "N2"
+            }
+          ]
+        },
+        {
+          "id": "his95_o1",
+          "descripcion": "His95 (Nε2) – O1 del PGH (carbonilo de la hidroxamida)",
+          "a": {
+            "chain": "A",
+            "resi": 95,
+            "atoms": [
+              "NE2"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "PGH",
+            "atoms": [
+              "O1"
+            ]
+          },
+          "valor_A": 2.66,
+          "atomos": "A:HIS95:NE2 – A:PGH249:O1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "HIS",
+              "resi": 95,
+              "atom": "NE2"
+            },
+            {
+              "chain": "A",
+              "resname": "PGH",
+              "resi": 249,
+              "atom": "O1"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado"
+    },
+    {
+      "pdb_id": "4AKE",
+      "secciones": [
+        "S7"
+      ],
+      "organismo_esperado": "Escherichia coli",
+      "titulo_contiene": [
+        "ADENYLATE KINASE"
+      ],
+      "ligandos_ccd": [],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "LYS",
+          "resi": 13,
+          "rol": "lazo P (Gly-X-X-Gly-X-Gly-Lys-Gly/Thr)"
+        },
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 88,
+          "rol": "une fosfatos del sustrato"
+        }
+      ],
+      "distancias": [],
+      "afirmacion_que_respalda": "Forma abierta (sin ligando) de la adenilato quinasa.",
+      "titulo_rcsb": "ADENYLATE KINASE",
+      "organismo": [
+        "Escherichia coli"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 2.2,
+      "fecha_deposito": "1995-12-29",
+      "referencia_primaria": {
+        "doi": "10.1016/S0969-2126(96)00018-4",
+        "cita": "Muller, C.W. et al. Adenylate kinase motions during catalysis: an energetic counterweight balancing substrate binding.. Structure 1996;4:147"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "ADENYLATE KINASE",
+          "organismo": [
+            "Escherichia coli"
+          ],
+          "cadenas_auth": [
+            "A",
+            "B"
+          ],
+          "longitud": 214
+        }
+      ],
+      "ligandos_rcsb": [],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/4AKE",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "LYS",
+          "resi": 13,
+          "rol": "lazo P (Gly-X-X-Gly-X-Gly-Lys-Gly/Thr)",
+          "encontrado": "LYS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 88,
+          "rol": "une fosfatos del sustrato",
+          "encontrado": "ARG",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [],
+      "problemas": [],
+      "estado": "verificado",
+      "alineamiento": {
+        "A": {
+          "rmsd_core_A": 1.98,
+          "n_ca_core": 146,
+          "rmsd_todos_ca_tras_superponer_core_A": 7.97,
+          "n_ca_total": 214,
+          "desplazamiento_max_ca_A": 23.6,
+          "segmentos_que_se_mueven_gt4A": [
+            {
+              "desde": 32,
+              "hasta": 66,
+              "max_A": 18.2
+            },
+            {
+              "desde": 120,
+              "hasta": 162,
+              "max_A": 23.6
+            }
+          ],
+          "rmsd_NMPbind_30-59_A": 11.32,
+          "rmsd_LID_122-159_A": 15.53
+        },
+        "B": {
+          "rmsd_core_A": 1.96,
+          "n_ca_core": 146,
+          "rmsd_todos_ca_tras_superponer_core_A": 7.64,
+          "n_ca_total": 214,
+          "desplazamiento_max_ca_A": 22.9,
+          "segmentos_que_se_mueven_gt4A": [
+            {
+              "desde": 32,
+              "hasta": 67,
+              "max_A": 17.9
+            },
+            {
+              "desde": 120,
+              "hasta": 162,
+              "max_A": 22.9
+            }
+          ],
+          "rmsd_NMPbind_30-59_A": 11.01,
+          "rmsd_LID_122-159_A": 14.77
+        }
+      }
+    },
+    {
+      "pdb_id": "1AKE",
+      "secciones": [
+        "S7"
+      ],
+      "organismo_esperado": "Escherichia coli",
+      "titulo_contiene": [
+        "ADENYLATE KINASE",
+        "AP5A"
+      ],
+      "ligandos_ccd": [
+        "AP5"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "LYS",
+          "resi": 13,
+          "rol": "lazo P"
+        },
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 88,
+          "rol": "une fosfatos del sustrato"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "arg88_ap5",
+          "descripcion": "Arg88 – átomo más cercano de Ap5A",
+          "a": {
+            "chain": "A",
+            "resi": 88,
+            "atoms": [
+              "NH1",
+              "NH2",
+              "NE"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "AP5"
+          }
+        },
+        {
+          "id": "lys13_ap5",
+          "descripcion": "Lys13 (Nζ) – átomo más cercano de Ap5A",
+          "a": {
+            "chain": "A",
+            "resi": 13,
+            "atoms": [
+              "NZ"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "AP5"
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "Forma cerrada con el inhibidor bisustrato Ap5A (ajuste inducido, diap. 21–22). Pareja de 4AKE para el alineamiento.",
+      "titulo_rcsb": "STRUCTURE OF THE COMPLEX BETWEEN ADENYLATE KINASE FROM ESCHERICHIA COLI AND THE INHIBITOR AP5A REFINED AT 1.9 ANGSTROMS RESOLUTION: A MODEL FOR A CATALYTIC TRANSITION STATE",
+      "organismo": [
+        "Escherichia coli"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 2.0,
+      "fecha_deposito": "1991-11-08",
+      "referencia_primaria": {
+        "doi": "10.1016/0022-2836(92)90582-5",
+        "cita": "Muller, C.W. et al. Structure of the complex between adenylate kinase from Escherichia coli and the inhibitor Ap5A refined at 1.9 A resolution. A model for a catalytic transition state.. J Mol Biol 1992;224:159"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "ADENYLATE KINASE",
+          "organismo": [
+            "Escherichia coli"
+          ],
+          "cadenas_auth": [
+            "A",
+            "B"
+          ],
+          "longitud": 214
+        }
+      ],
+      "ligandos_rcsb": [
+        "AP5"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/1AKE",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "LYS",
+          "resi": 13,
+          "rol": "lazo P",
+          "encontrado": "LYS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 88,
+          "rol": "une fosfatos del sustrato",
+          "encontrado": "ARG",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "arg88_ap5",
+          "descripcion": "Arg88 – átomo más cercano de Ap5A",
+          "a": {
+            "chain": "A",
+            "resi": 88,
+            "atoms": [
+              "NH1",
+              "NH2",
+              "NE"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "AP5"
+          },
+          "valor_A": 2.84,
+          "atomos": "A:ARG88:NH1 – A:AP5215:O2E",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "ARG",
+              "resi": 88,
+              "atom": "NH1"
+            },
+            {
+              "chain": "A",
+              "resname": "AP5",
+              "resi": 215,
+              "atom": "O2E"
+            }
+          ]
+        },
+        {
+          "id": "lys13_ap5",
+          "descripcion": "Lys13 (Nζ) – átomo más cercano de Ap5A",
+          "a": {
+            "chain": "A",
+            "resi": 13,
+            "atoms": [
+              "NZ"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "AP5"
+          },
+          "valor_A": 2.78,
+          "atomos": "A:LYS13:NZ – A:AP5215:O1B",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "LYS",
+              "resi": 13,
+              "atom": "NZ"
+            },
+            {
+              "chain": "A",
+              "resname": "AP5",
+              "resi": 215,
+              "atom": "O1B"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado",
+      "alineamiento": {
+        "A": {
+          "rmsd_core_A": 1.98,
+          "n_ca_core": 146,
+          "rmsd_todos_ca_tras_superponer_core_A": 7.97,
+          "n_ca_total": 214,
+          "desplazamiento_max_ca_A": 23.6,
+          "segmentos_que_se_mueven_gt4A": [
+            {
+              "desde": 32,
+              "hasta": 66,
+              "max_A": 18.2
+            },
+            {
+              "desde": 120,
+              "hasta": 162,
+              "max_A": 23.6
+            }
+          ],
+          "rmsd_NMPbind_30-59_A": 11.32,
+          "rmsd_LID_122-159_A": 15.53
+        },
+        "B": {
+          "rmsd_core_A": 1.96,
+          "n_ca_core": 146,
+          "rmsd_todos_ca_tras_superponer_core_A": 7.64,
+          "n_ca_total": 214,
+          "desplazamiento_max_ca_A": 22.9,
+          "segmentos_que_se_mueven_gt4A": [
+            {
+              "desde": 32,
+              "hasta": 67,
+              "max_A": 17.9
+            },
+            {
+              "desde": 120,
+              "hasta": 162,
+              "max_A": 22.9
+            }
+          ],
+          "rmsd_NMPbind_30-59_A": 11.01,
+          "rmsd_LID_122-159_A": 14.77
+        }
+      }
+    },
+    {
+      "pdb_id": "2YHX",
+      "secciones": [
+        "S7"
+      ],
+      "organismo_esperado": "Saccharomyces cerevisiae",
+      "titulo_contiene": [
+        "HEXOKINASE"
+      ],
+      "ligandos_ccd": [
+        "OTG"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [],
+      "distancias": [],
+      "afirmacion_que_respalda": "Candidata para hexoquinasa (diap. 22). NO se usa: se eligió la adenilato quinasa. Se conserva solo como registro.",
+      "titulo_rcsb": "SEQUENCING A PROTEIN BY X-RAY CRYSTALLOGRAPHY. II. REFINEMENT OF YEAST HEXOKINASE B CO-ORDINATES AND SEQUENCE AT 2.1 ANGSTROMS RESOLUTION",
+      "organismo": [
+        "Saccharomyces cerevisiae"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 2.1,
+      "fecha_deposito": "1978-03-20",
+      "referencia_primaria": {
+        "doi": "10.1016/0022-2836(78)90374-1",
+        "cita": "Anderson, C.M. et al. Sequencing a protein by x-ray crystallography. II. Refinement of yeast hexokinase B co-ordinates and sequence at 2.1 A resolution.. J Mol Biol 1978;123:15"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "HEXOKINASE B",
+          "organismo": [
+            "Saccharomyces cerevisiae"
+          ],
+          "cadenas_auth": [
+            "A"
+          ],
+          "longitud": 457
+        }
+      ],
+      "ligandos_rcsb": [
+        "OTG"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/2YHX",
+      "n_modelos": 1,
+      "residuos_verificados": [],
+      "distancias_medidas": [],
+      "problemas": [],
+      "estado": "verificado"
+    },
+    {
+      "pdb_id": "1IG8",
+      "secciones": [
+        "S7"
+      ],
+      "organismo_esperado": "Saccharomyces cerevisiae",
+      "titulo_contiene": [
+        "Hexokinase"
+      ],
+      "ligandos_ccd": [
+        "SO4"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [],
+      "distancias": [],
+      "afirmacion_que_respalda": "Candidata para hexoquinasa sin glucosa. NO se usa (ver 2YHX).",
+      "titulo_rcsb": "Crystal Structure of Yeast Hexokinase PII with the correct amino acid sequence",
+      "organismo": [
+        "Saccharomyces cerevisiae"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 2.2,
+      "fecha_deposito": "2001-04-17",
+      "referencia_primaria": {
+        "doi": "10.1074/jbc.M910412199",
+        "cita": "Kuser, P.R. et al. The high resolution crystal structure of yeast hexokinase PII with the correct primary sequence provides new insights into its mechanism of action.. J Biol Chem 2000;275:20814"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "hexokinase PII",
+          "organismo": [
+            "Saccharomyces cerevisiae"
+          ],
+          "cadenas_auth": [
+            "A"
+          ],
+          "longitud": 486
+        }
+      ],
+      "ligandos_rcsb": [
+        "SO4"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/1IG8",
+      "n_modelos": 1,
+      "residuos_verificados": [],
+      "distancias_medidas": [],
+      "problemas": [],
+      "estado": "verificado"
+    },
+    {
+      "pdb_id": "1I10",
+      "secciones": [
+        "S12",
+        "S13"
+      ],
+      "organismo_esperado": "Homo sapiens",
+      "titulo_contiene": [
+        "LACTATE DEHYDROGENASE",
+        "NADH",
+        "OXAMATE"
+      ],
+      "ligandos_ccd": [
+        "NAI",
+        "OXM"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 192,
+          "rol": "ácido/base general (His193 en UniProt P00338, que cuenta la Met inicial)"
+        },
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 168,
+          "rol": "une el carboxilato del sustrato"
+        },
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 105,
+          "rol": "une el carboxilato del sustrato"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "nadh_c4_oxm_c1",
+          "descripcion": "C4 del nicotinamida (NADH) – C1 del oxamato (C amida; análogo del C=O del piruvato)",
+          "a": {
+            "chain": "A",
+            "het": "NAI",
+            "atoms": [
+              "C4N"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "OXM",
+            "atoms": [
+              "C1"
+            ]
+          }
+        },
+        {
+          "id": "his192_oxm_o1",
+          "descripcion": "His192 del archivo (= His193 UniProt) (Nε2) – O1 del oxamato (análogo del O carbonílico del piruvato)",
+          "a": {
+            "chain": "A",
+            "resi": 192,
+            "atoms": [
+              "NE2"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "OXM",
+            "atoms": [
+              "O1"
+            ]
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "NADH unido en el sitio de una oxidorreductasa (LDH-A humana) junto a un análogo del piruvato.",
+      "titulo_rcsb": "HUMAN MUSCLE L-LACTATE DEHYDROGENASE M CHAIN, TERNARY COMPLEX WITH NADH AND OXAMATE",
+      "organismo": [
+        "Homo sapiens"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 2.3,
+      "fecha_deposito": "2001-01-30",
+      "referencia_primaria": {
+        "doi": "10.1002/1097-0134(20010501)43:2<175::AID-PROT1029>3.0.CO;2-#",
+        "cita": "Read, J.A. et al. Structural basis for altered activity of M- and H-isozyme forms of human lactate dehydrogenase.. Proteins 2001;43:175"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "L-LACTATE DEHYDROGENASE M CHAIN",
+          "organismo": [
+            "Homo sapiens"
+          ],
+          "cadenas_auth": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ],
+          "longitud": 331
+        }
+      ],
+      "ligandos_rcsb": [
+        "ACT",
+        "NAI",
+        "OXM"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/1I10",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 192,
+          "rol": "ácido/base general (His193 en UniProt P00338, que cuenta la Met inicial)",
+          "encontrado": "HIS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 168,
+          "rol": "une el carboxilato del sustrato",
+          "encontrado": "ARG",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 105,
+          "rol": "une el carboxilato del sustrato",
+          "encontrado": "ARG",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "nadh_c4_oxm_c1",
+          "descripcion": "C4 del nicotinamida (NADH) – C1 del oxamato (C amida; análogo del C=O del piruvato)",
+          "a": {
+            "chain": "A",
+            "het": "NAI",
+            "atoms": [
+              "C4N"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "OXM",
+            "atoms": [
+              "C1"
+            ]
+          },
+          "valor_A": 3.29,
+          "atomos": "A:NAI801:C4N – A:OXM802:C1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "NAI",
+              "resi": 801,
+              "atom": "C4N"
+            },
+            {
+              "chain": "A",
+              "resname": "OXM",
+              "resi": 802,
+              "atom": "C1"
+            }
+          ]
+        },
+        {
+          "id": "his192_oxm_o1",
+          "descripcion": "His192 del archivo (= His193 UniProt) (Nε2) – O1 del oxamato (análogo del O carbonílico del piruvato)",
+          "a": {
+            "chain": "A",
+            "resi": 192,
+            "atoms": [
+              "NE2"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "OXM",
+            "atoms": [
+              "O1"
+            ]
+          },
+          "valor_A": 2.9,
+          "atomos": "A:HIS192:NE2 – A:OXM802:O1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "HIS",
+              "resi": 192,
+              "atom": "NE2"
+            },
+            {
+              "chain": "A",
+              "resname": "OXM",
+              "resi": 802,
+              "atom": "O1"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado",
+      "numeracion_nota": "El archivo numera desde Ala1 (sin Met inicial): His192 del archivo = His193 de UniProt P00338 (sitio activo, aceptor de protón). Verificado en UniProt."
+    },
+    {
+      "pdb_id": "6ADH",
+      "secciones": [
+        "S12",
+        "S13"
+      ],
+      "organismo_esperado": "Equus caballus",
+      "titulo_contiene": [
+        "ALCOHOL DEHYDROGENASE"
+      ],
+      "ligandos_ccd": [
+        "NAD",
+        "ZN",
+        "DMS"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "CYS",
+          "resi": 46,
+          "rol": "ligando del Zn catalítico"
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 67,
+          "rol": "ligando del Zn catalítico"
+        },
+        {
+          "chain": "A",
+          "resname": "CYS",
+          "resi": 174,
+          "rol": "ligando del Zn catalítico"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "zn_cys46",
+          "descripcion": "Zn catalítico – Cys46 (Sγ)",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 46,
+            "atoms": [
+              "SG"
+            ]
+          }
+        },
+        {
+          "id": "zn_his67",
+          "descripcion": "Zn catalítico – His67 (Nε2/Nδ1)",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 67,
+            "atoms": [
+              "NE2",
+              "ND1"
+            ]
+          }
+        },
+        {
+          "id": "zn_cys174",
+          "descripcion": "Zn catalítico – Cys174 (Sγ)",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 174,
+            "atoms": [
+              "SG"
+            ]
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "ADH de hígado de caballo: NAD⁺ y Zn²⁺ catalítico (Tabla 6-1, diap. 23). DMS = dimetilsulfóxido (no es sustrato fisiológico).",
+      "titulo_rcsb": "STRUCTURE OF TRICLINIC TERNARY COMPLEX OF HORSE LIVER ALCOHOL DEHYDROGENASE AT 2.9 ANGSTROMS RESOLUTION",
+      "organismo": [
+        "Equus caballus"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 2.9,
+      "fecha_deposito": "1984-01-16",
+      "referencia_primaria": {
+        "doi": "10.1016/0022-2836(81)90047-4",
+        "cita": "Eklund, H. et al. Structure of a triclinic ternary complex of horse liver alcohol dehydrogenase at 2.9 A resolution.. J Mol Biol 1981;146:561"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "HOLO-LIVER ALCOHOL DEHYDROGENASE",
+          "organismo": [
+            "Equus caballus"
+          ],
+          "cadenas_auth": [
+            "A",
+            "B"
+          ],
+          "longitud": 374
+        }
+      ],
+      "ligandos_rcsb": [
+        "ZN",
+        "NAD",
+        "DMS"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/6ADH",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "CYS",
+          "resi": 46,
+          "rol": "ligando del Zn catalítico",
+          "encontrado": "CYS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 67,
+          "rol": "ligando del Zn catalítico",
+          "encontrado": "HIS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "CYS",
+          "resi": 174,
+          "rol": "ligando del Zn catalítico",
+          "encontrado": "CYS",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "zn_cys46",
+          "descripcion": "Zn catalítico – Cys46 (Sγ)",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 46,
+            "atoms": [
+              "SG"
+            ]
+          },
+          "valor_A": 2.38,
+          "atomos": "A:ZN375:ZN – A:CYS46:SG",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "ZN",
+              "resi": 375,
+              "atom": "ZN"
+            },
+            {
+              "chain": "A",
+              "resname": "CYS",
+              "resi": 46,
+              "atom": "SG"
+            }
+          ]
+        },
+        {
+          "id": "zn_his67",
+          "descripcion": "Zn catalítico – His67 (Nε2/Nδ1)",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 67,
+            "atoms": [
+              "NE2",
+              "ND1"
+            ]
+          },
+          "valor_A": 2.25,
+          "atomos": "A:ZN375:ZN – A:HIS67:NE2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "ZN",
+              "resi": 375,
+              "atom": "ZN"
+            },
+            {
+              "chain": "A",
+              "resname": "HIS",
+              "resi": 67,
+              "atom": "NE2"
+            }
+          ]
+        },
+        {
+          "id": "zn_cys174",
+          "descripcion": "Zn catalítico – Cys174 (Sγ)",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 174,
+            "atoms": [
+              "SG"
+            ]
+          },
+          "valor_A": 2.34,
+          "atomos": "A:ZN375:ZN – A:CYS174:SG",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "ZN",
+              "resi": 375,
+              "atom": "ZN"
+            },
+            {
+              "chain": "A",
+              "resname": "CYS",
+              "resi": 174,
+              "atom": "SG"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado"
+    },
+    {
+      "pdb_id": "1EMD",
+      "secciones": [
+        "S13"
+      ],
+      "organismo_esperado": "Escherichia coli",
+      "titulo_contiene": [
+        "MALATE DEHYDROGENASE",
+        "CITRATE",
+        "NAD"
+      ],
+      "ligandos_ccd": [
+        "NAD",
+        "CIT"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 177,
+          "rol": "ácido/base general"
+        },
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 81,
+          "rol": "une el sustrato"
+        },
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 87,
+          "rol": "une el sustrato"
+        },
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 153,
+          "rol": "une el sustrato"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "his177_cit",
+          "descripcion": "His177 (Nε2) – átomo más cercano de citrato",
+          "a": {
+            "chain": "A",
+            "resi": 177,
+            "atoms": [
+              "NE2"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "CIT"
+          }
+        },
+        {
+          "id": "nad_c4_cit",
+          "descripcion": "C4 del nicotinamida (NAD) – átomo más cercano de citrato",
+          "a": {
+            "chain": "A",
+            "het": "NAD",
+            "atoms": [
+              "C4N"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "CIT"
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "Malato deshidrogenasa (diap. 42) con NAD y citrato (análogo del sustrato).",
+      "titulo_rcsb": "CRYSTAL STRUCTURE OF A TERNARY COMPLEX OF ESCHERICHIA COLI MALATE DEHYDROGENASE, CITRATE AND NAD AT 1.9 ANGSTROMS RESOLUTION",
+      "organismo": [
+        "Escherichia coli"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 1.9,
+      "fecha_deposito": "1993-03-25",
+      "referencia_primaria": {
+        "doi": "10.1006/jmbi.1993.1377",
+        "cita": "Hall, M.D. et al. Crystal structure of a ternary complex of Escherichia coli malate dehydrogenase citrate and NAD at 1.9 A resolution.. J Mol Biol 1993;232:213"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "MALATE DEHYDROGENASE",
+          "organismo": [
+            "Escherichia coli"
+          ],
+          "cadenas_auth": [
+            "A"
+          ],
+          "longitud": 312
+        }
+      ],
+      "ligandos_rcsb": [
+        "CIT",
+        "NAD"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/1EMD",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 177,
+          "rol": "ácido/base general",
+          "encontrado": "HIS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 81,
+          "rol": "une el sustrato",
+          "encontrado": "ARG",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 87,
+          "rol": "une el sustrato",
+          "encontrado": "ARG",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 153,
+          "rol": "une el sustrato",
+          "encontrado": "ARG",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "his177_cit",
+          "descripcion": "His177 (Nε2) – átomo más cercano de citrato",
+          "a": {
+            "chain": "A",
+            "resi": 177,
+            "atoms": [
+              "NE2"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "CIT"
+          },
+          "valor_A": 2.81,
+          "atomos": "A:HIS177:NE2 – A:CIT313:O7",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "HIS",
+              "resi": 177,
+              "atom": "NE2"
+            },
+            {
+              "chain": "A",
+              "resname": "CIT",
+              "resi": 313,
+              "atom": "O7"
+            }
+          ]
+        },
+        {
+          "id": "nad_c4_cit",
+          "descripcion": "C4 del nicotinamida (NAD) – átomo más cercano de citrato",
+          "a": {
+            "chain": "A",
+            "het": "NAD",
+            "atoms": [
+              "C4N"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "CIT"
+          },
+          "valor_A": 3.16,
+          "atomos": "A:NAD314:C4N – A:CIT313:C5",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "NAD",
+              "resi": 314,
+              "atom": "C4N"
+            },
+            {
+              "chain": "A",
+              "resname": "CIT",
+              "resi": 313,
+              "atom": "C5"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado"
+    },
+    {
+      "pdb_id": "1KIF",
+      "secciones": [
+        "S12"
+      ],
+      "organismo_esperado": "Sus scrofa",
+      "titulo_contiene": [
+        "D-AMINO ACID OXIDASE"
+      ],
+      "ligandos_ccd": [
+        "FAD",
+        "BEZ"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "TYR",
+          "resi": 224,
+          "rol": "sitio activo"
+        },
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 283,
+          "rol": "une el carboxilato del sustrato"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "fad_n5_bez",
+          "descripcion": "N5 de la isoaloxazina (FAD) – átomo más cercano de benzoato",
+          "a": {
+            "chain": "A",
+            "het": "FAD",
+            "atoms": [
+              "N5"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "BEZ"
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "FAD (anillo isoaloxazina) unido a una flavoproteína oxidasa (diap. 39).",
+      "titulo_rcsb": "D-AMINO ACID OXIDASE FROM PIG KIDNEY",
+      "organismo": [
+        "Sus scrofa"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 2.6,
+      "fecha_deposito": "1996-01-19",
+      "referencia_primaria": {
+        "doi": "10.1073/pnas.93.15.7496",
+        "cita": "Mattevi, A. et al. Crystal structure of D-amino acid oxidase: a case of active site mirror-image convergent evolution with flavocytochrome b2.. Proc Natl Acad Sci U S A 1996;93:7496"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "D-AMINO ACID OXIDASE",
+          "organismo": [
+            "Sus scrofa"
+          ],
+          "cadenas_auth": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ],
+          "longitud": 347
+        }
+      ],
+      "ligandos_rcsb": [
+        "FAD",
+        "BEZ"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/1KIF",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "TYR",
+          "resi": 224,
+          "rol": "sitio activo",
+          "encontrado": "TYR",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 283,
+          "rol": "une el carboxilato del sustrato",
+          "encontrado": "ARG",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "fad_n5_bez",
+          "descripcion": "N5 de la isoaloxazina (FAD) – átomo más cercano de benzoato",
+          "a": {
+            "chain": "A",
+            "het": "FAD",
+            "atoms": [
+              "N5"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "BEZ"
+          },
+          "valor_A": 3.3,
+          "atomos": "A:FAD348:N5 – A:BEZ349:C1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "FAD",
+              "resi": 348,
+              "atom": "N5"
+            },
+            {
+              "chain": "A",
+              "resname": "BEZ",
+              "resi": 349,
+              "atom": "C1"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado"
+    },
+    {
+      "pdb_id": "5CPA",
+      "secciones": [
+        "S9",
+        "S13"
+      ],
+      "organismo_esperado": "Bos taurus",
+      "titulo_contiene": [
+        "CARBOXYPEPTIDASE A"
+      ],
+      "ligandos_ccd": [
+        "ZN"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 69,
+          "rol": "ligando del Zn"
+        },
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 72,
+          "rol": "ligando del Zn"
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 196,
+          "rol": "ligando del Zn"
+        },
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 270,
+          "rol": "base/ácido general"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "zn_his69",
+          "descripcion": "Zn – His69 (Nδ1)",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 69,
+            "atoms": [
+              "ND1",
+              "NE2"
+            ]
+          }
+        },
+        {
+          "id": "zn_glu72",
+          "descripcion": "Zn – Glu72 (carboxilato)",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 72,
+            "atoms": [
+              "OE1",
+              "OE2"
+            ]
+          }
+        },
+        {
+          "id": "zn_his196",
+          "descripcion": "Zn – His196 (Nδ1)",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 196,
+            "atoms": [
+              "ND1",
+              "NE2"
+            ]
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "Carboxipeptidasa A es una metaloenzima de Zn²⁺ (Tabla 6-1; E.C. 3.4.17.1, diap. 48).",
+      "titulo_rcsb": "REFINED CRYSTAL STRUCTURE OF CARBOXYPEPTIDASE A AT 1.54 ANGSTROMS RESOLUTION.",
+      "organismo": [
+        "Bos taurus"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 1.54,
+      "fecha_deposito": "1982-05-06",
+      "referencia_primaria": {
+        "doi": "10.1016/S0022-2836(83)80024-2",
+        "cita": "Rees, D.C. et al. Refined crystal structure of carboxypeptidase A at 1.54 A resolution.. J Mol Biol 1983;168:367"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "CARBOXYPEPTIDASE A",
+          "organismo": [
+            "Bos taurus"
+          ],
+          "cadenas_auth": [
+            "A"
+          ],
+          "longitud": 307
+        }
+      ],
+      "ligandos_rcsb": [
+        "ZN"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/5CPA",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 69,
+          "rol": "ligando del Zn",
+          "encontrado": "HIS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 72,
+          "rol": "ligando del Zn",
+          "encontrado": "GLU",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 196,
+          "rol": "ligando del Zn",
+          "encontrado": "HIS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 270,
+          "rol": "base/ácido general",
+          "encontrado": "GLU",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "zn_his69",
+          "descripcion": "Zn – His69 (Nδ1)",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 69,
+            "atoms": [
+              "ND1",
+              "NE2"
+            ]
+          },
+          "valor_A": 2.13,
+          "atomos": "A:ZN308:ZN – A:HIS69:ND1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "ZN",
+              "resi": 308,
+              "atom": "ZN"
+            },
+            {
+              "chain": "A",
+              "resname": "HIS",
+              "resi": 69,
+              "atom": "ND1"
+            }
+          ]
+        },
+        {
+          "id": "zn_glu72",
+          "descripcion": "Zn – Glu72 (carboxilato)",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 72,
+            "atoms": [
+              "OE1",
+              "OE2"
+            ]
+          },
+          "valor_A": 2.18,
+          "atomos": "A:ZN308:ZN – A:GLU72:OE1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "ZN",
+              "resi": 308,
+              "atom": "ZN"
+            },
+            {
+              "chain": "A",
+              "resname": "GLU",
+              "resi": 72,
+              "atom": "OE1"
+            }
+          ]
+        },
+        {
+          "id": "zn_his196",
+          "descripcion": "Zn – His196 (Nδ1)",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 196,
+            "atoms": [
+              "ND1",
+              "NE2"
+            ]
+          },
+          "valor_A": 2.07,
+          "atomos": "A:ZN308:ZN – A:HIS196:ND1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "ZN",
+              "resi": 308,
+              "atom": "ZN"
+            },
+            {
+              "chain": "A",
+              "resname": "HIS",
+              "resi": 196,
+              "atom": "ND1"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado"
+    },
+    {
+      "pdb_id": "4V40",
+      "secciones": [
+        "S13"
+      ],
+      "organismo_esperado": "Escherichia coli",
+      "titulo_contiene": [
+        "BETA-GALACTOSIDASE"
+      ],
+      "ligandos_ccd": [
+        "MG"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 461,
+          "rol": "ácido/base general"
+        },
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 537,
+          "rol": "nucleófilo catalítico"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "mg_glu461",
+          "descripcion": "Mg²⁺ – Glu461 (carboxilato)",
+          "a": {
+            "chain": "A",
+            "het": "MG",
+            "atoms": [
+              "MG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 461,
+            "atoms": [
+              "OE1",
+              "OE2"
+            ]
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "β-galactosidasa de E. coli (E.C. 3.2.1.23, diap. 44). Reemplaza a 1BGL (obsoleto).",
+      "titulo_rcsb": "BETA-GALACTOSIDASE",
+      "organismo": [
+        "Escherichia coli"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 2.5,
+      "fecha_deposito": "1994-07-18",
+      "referencia_primaria": {
+        "doi": "10.1038/369761a0",
+        "cita": "Jacobson, R.H. et al. Three-dimensional structure of beta-galactosidase from E. coli.. Nature 1994;369:761"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "BETA-GALACTOSIDASE",
+          "organismo": [
+            "Escherichia coli"
+          ],
+          "cadenas_auth": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P"
+          ],
+          "longitud": 1023
+        }
+      ],
+      "ligandos_rcsb": [
+        "MG"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/4V40",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 461,
+          "rol": "ácido/base general",
+          "encontrado": "GLU",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 537,
+          "rol": "nucleófilo catalítico",
+          "encontrado": "GLU",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "mg_glu461",
+          "descripcion": "Mg²⁺ – Glu461 (carboxilato)",
+          "a": {
+            "chain": "A",
+            "het": "MG",
+            "atoms": [
+              "MG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 461,
+            "atoms": [
+              "OE1",
+              "OE2"
+            ]
+          },
+          "valor_A": 2.36,
+          "atomos": "A:MG1101:MG – A:GLU461:OE1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "MG",
+              "resi": 1101,
+              "atom": "MG"
+            },
+            {
+              "chain": "A",
+              "resname": "GLU",
+              "resi": 461,
+              "atom": "OE1"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado"
+    },
+    {
+      "pdb_id": "1ONE",
+      "secciones": [
+        "S13"
+      ],
+      "organismo_esperado": "Saccharomyces cerevisiae",
+      "titulo_contiene": [
+        "ENOLASE",
+        "PHOSPHOGLYCEATE",
+        "PHOSPHOENOLPYRUVATE"
+      ],
+      "ligandos_ccd": [
+        "MG",
+        "PEP",
+        "2PG"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "SER",
+          "resi": 39,
+          "rol": "ligando del Mg²⁺ (sitio II)"
+        },
+        {
+          "chain": "A",
+          "resname": "ASP",
+          "resi": 246,
+          "rol": "ligando del Mg²⁺ (sitio I)"
+        },
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 295,
+          "rol": "ligando del Mg²⁺ (sitio I)"
+        },
+        {
+          "chain": "A",
+          "resname": "ASP",
+          "resi": 320,
+          "rol": "ligando del Mg²⁺ (sitio I)"
+        },
+        {
+          "chain": "A",
+          "resname": "LYS",
+          "resi": 345,
+          "rol": "base que toma el protón de C2 del 2-fosfoglicerato"
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 159,
+          "rol": "sitio activo"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "mg438_asp246",
+          "descripcion": "Mg²⁺ 438 – Asp246",
+          "a": {
+            "chain": "A",
+            "het": "MG",
+            "resi": 438,
+            "atoms": [
+              "MG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 246,
+            "atoms": [
+              "OD1",
+              "OD2"
+            ]
+          }
+        },
+        {
+          "id": "mg438_glu295",
+          "descripcion": "Mg²⁺ 438 – Glu295",
+          "a": {
+            "chain": "A",
+            "het": "MG",
+            "resi": 438,
+            "atoms": [
+              "MG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 295,
+            "atoms": [
+              "OE1",
+              "OE2"
+            ]
+          }
+        },
+        {
+          "id": "mg438_asp320",
+          "descripcion": "Mg²⁺ 438 – Asp320",
+          "a": {
+            "chain": "A",
+            "het": "MG",
+            "resi": 438,
+            "atoms": [
+              "MG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 320,
+            "atoms": [
+              "OD1",
+              "OD2"
+            ]
+          }
+        },
+        {
+          "id": "mg439_ser39",
+          "descripcion": "Mg²⁺ 439 – Ser39 (Oγ)",
+          "a": {
+            "chain": "A",
+            "het": "MG",
+            "resi": 439,
+            "atoms": [
+              "MG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 39,
+            "atoms": [
+              "OG"
+            ]
+          }
+        },
+        {
+          "id": "lys345_2pg_c2",
+          "descripcion": "Lys345 (Nζ) – C2 del 2-fosfoglicerato (C que pierde el protón)",
+          "a": {
+            "chain": "A",
+            "resi": 345,
+            "atoms": [
+              "NZ"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "2PG",
+            "atoms": [
+              "C2"
+            ]
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "Enolasa (liasa, diap. 45) con una mezcla de 2-fosfoglicerato y fosfoenolpiruvato.",
+      "titulo_rcsb": "YEAST ENOLASE COMPLEXED WITH AN EQUILIBRIUM MIXTURE OF 2'-PHOSPHOGLYCEATE AND PHOSPHOENOLPYRUVATE",
+      "organismo": [
+        "Saccharomyces cerevisiae"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 1.8,
+      "fecha_deposito": "1995-12-05",
+      "referencia_primaria": {
+        "doi": "10.1021/bi952859c",
+        "cita": "Larsen, T.M. et al. A carboxylate oxygen of the substrate bridges the magnesium ions at the active site of enolase: structure of the yeast enzyme complexed with the equilibrium mixture of 2-phosphoglycerate and phosphoenolpyruvate at 1.8 A resolution.. Biochemistry 1996;35:4349"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "ENOLASE",
+          "organismo": [
+            "Saccharomyces cerevisiae"
+          ],
+          "cadenas_auth": [
+            "A",
+            "B"
+          ],
+          "longitud": 436
+        }
+      ],
+      "ligandos_rcsb": [
+        "MG",
+        "PEP",
+        "2PG"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/1ONE",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "SER",
+          "resi": 39,
+          "rol": "ligando del Mg²⁺ (sitio II)",
+          "encontrado": "SER",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "ASP",
+          "resi": 246,
+          "rol": "ligando del Mg²⁺ (sitio I)",
+          "encontrado": "ASP",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 295,
+          "rol": "ligando del Mg²⁺ (sitio I)",
+          "encontrado": "GLU",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "ASP",
+          "resi": 320,
+          "rol": "ligando del Mg²⁺ (sitio I)",
+          "encontrado": "ASP",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "LYS",
+          "resi": 345,
+          "rol": "base que toma el protón de C2 del 2-fosfoglicerato",
+          "encontrado": "LYS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 159,
+          "rol": "sitio activo",
+          "encontrado": "HIS",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "mg438_asp246",
+          "descripcion": "Mg²⁺ 438 – Asp246",
+          "a": {
+            "chain": "A",
+            "het": "MG",
+            "resi": 438,
+            "atoms": [
+              "MG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 246,
+            "atoms": [
+              "OD1",
+              "OD2"
+            ]
+          },
+          "valor_A": 2.04,
+          "atomos": "A:MG438:MG – A:ASP246:OD2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "MG",
+              "resi": 438,
+              "atom": "MG"
+            },
+            {
+              "chain": "A",
+              "resname": "ASP",
+              "resi": 246,
+              "atom": "OD2"
+            }
+          ]
+        },
+        {
+          "id": "mg438_glu295",
+          "descripcion": "Mg²⁺ 438 – Glu295",
+          "a": {
+            "chain": "A",
+            "het": "MG",
+            "resi": 438,
+            "atoms": [
+              "MG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 295,
+            "atoms": [
+              "OE1",
+              "OE2"
+            ]
+          },
+          "valor_A": 1.88,
+          "atomos": "A:MG438:MG – A:GLU295:OE2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "MG",
+              "resi": 438,
+              "atom": "MG"
+            },
+            {
+              "chain": "A",
+              "resname": "GLU",
+              "resi": 295,
+              "atom": "OE2"
+            }
+          ]
+        },
+        {
+          "id": "mg438_asp320",
+          "descripcion": "Mg²⁺ 438 – Asp320",
+          "a": {
+            "chain": "A",
+            "het": "MG",
+            "resi": 438,
+            "atoms": [
+              "MG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 320,
+            "atoms": [
+              "OD1",
+              "OD2"
+            ]
+          },
+          "valor_A": 2.07,
+          "atomos": "A:MG438:MG – A:ASP320:OD2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "MG",
+              "resi": 438,
+              "atom": "MG"
+            },
+            {
+              "chain": "A",
+              "resname": "ASP",
+              "resi": 320,
+              "atom": "OD2"
+            }
+          ]
+        },
+        {
+          "id": "mg439_ser39",
+          "descripcion": "Mg²⁺ 439 – Ser39 (Oγ)",
+          "a": {
+            "chain": "A",
+            "het": "MG",
+            "resi": 439,
+            "atoms": [
+              "MG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 39,
+            "atoms": [
+              "OG"
+            ]
+          },
+          "valor_A": 2.2,
+          "atomos": "A:MG439:MG – A:SER39:OG",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "MG",
+              "resi": 439,
+              "atom": "MG"
+            },
+            {
+              "chain": "A",
+              "resname": "SER",
+              "resi": 39,
+              "atom": "OG"
+            }
+          ]
+        },
+        {
+          "id": "lys345_2pg_c2",
+          "descripcion": "Lys345 (Nζ) – C2 del 2-fosfoglicerato (C que pierde el protón)",
+          "a": {
+            "chain": "A",
+            "resi": 345,
+            "atoms": [
+              "NZ"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "2PG",
+            "atoms": [
+              "C2"
+            ]
+          },
+          "valor_A": 3.12,
+          "atomos": "A:LYS345:NZ – A:2PG441:C2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "LYS",
+              "resi": 345,
+              "atom": "NZ"
+            },
+            {
+              "chain": "A",
+              "resname": "2PG",
+              "resi": 441,
+              "atom": "C2"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado"
+    },
+    {
+      "pdb_id": "1IAT",
+      "secciones": [
+        "S13"
+      ],
+      "organismo_esperado": "Homo sapiens",
+      "titulo_contiene": [
+        "PHOSPHOGLUCOSE ISOMERASE"
+      ],
+      "ligandos_ccd": [
+        "SO4",
+        "BME"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [],
+      "distancias": [],
+      "afirmacion_que_respalda": "Fosfoglucosa isomerasa humana (E.C. 5.3.1.9). SIN sustrato: se avisará en la interfaz.",
+      "titulo_rcsb": "CRYSTAL STRUCTURE OF HUMAN PHOSPHOGLUCOSE ISOMERASE/NEUROLEUKIN/AUTOCRINE MOTILITY FACTOR/MATURATION FACTOR",
+      "organismo": [
+        "Homo sapiens"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 1.62,
+      "fecha_deposito": "2001-03-23",
+      "referencia_primaria": {
+        "doi": "10.1006/jmbi.2001.4680",
+        "cita": "Read, J. et al. The crystal structure of human phosphoglucose isomerase at 1.6 A resolution: implications for catalytic mechanism, cytokine activity and haemolytic anaemia.. J Mol Biol 2001;309:447"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "PHOSPHOGLUCOSE ISOMERASE",
+          "organismo": [
+            "Homo sapiens"
+          ],
+          "cadenas_auth": [
+            "A"
+          ],
+          "longitud": 557
+        }
+      ],
+      "ligandos_rcsb": [
+        "SO4",
+        "BME"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/1IAT",
+      "n_modelos": 1,
+      "residuos_verificados": [],
+      "distancias_medidas": [],
+      "problemas": [],
+      "estado": "verificado"
+    },
+    {
+      "pdb_id": "3BG3",
+      "secciones": [
+        "S13"
+      ],
+      "organismo_esperado": "Homo sapiens",
+      "titulo_contiene": [
+        "Pyruvate carboxylase"
+      ],
+      "ligandos_ccd": [
+        "MN",
+        "PYR",
+        "BTI"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "KCX",
+          "resi": 741,
+          "rol": "lisina carboxilada que une el Mn²⁺"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "mn_pyr",
+          "descripcion": "Mn²⁺ (cadena A) – átomo más cercano del piruvato (cadena A)",
+          "a": {
+            "chain": "A",
+            "het": "MN",
+            "atoms": [
+              "MN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "PYR"
+          }
+        },
+        {
+          "id": "bti_a_pyr_b",
+          "descripcion": "Biotina unida a la cadena A – átomo más cercano del piruvato del sitio activo de la cadena B (la biotina de una subunidad alcanza el sitio de carboxiltransferencia de la vecina)",
+          "a": {
+            "chain": "A",
+            "het": "BTI"
+          },
+          "b": {
+            "chain": "B",
+            "het": "PYR"
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "Piruvato carboxilasa humana (ligasa E.C. 6.4.1.1, diap. 47): biotina, Mn²⁺ y piruvato. Falta el dominio de biotina carboxilasa N-terminal.",
+      "titulo_rcsb": "Crystal Structure of Human Pyruvate Carboxylase (missing the biotin carboxylase domain at the N-terminus)",
+      "organismo": [
+        "Homo sapiens"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 2.8,
+      "fecha_deposito": "2007-11-26",
+      "referencia_primaria": {
+        "doi": "10.1038/nsmb.1393",
+        "cita": "Xiang, S. et al. Crystal structures of human and Staphylococcus aureus pyruvate carboxylase and molecular insights into the carboxyltransfer reaction.. Nat Struct Mol Biol 2008;15:295"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "Pyruvate carboxylase, mitochondrial",
+          "organismo": [
+            "Homo sapiens"
+          ],
+          "cadenas_auth": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "longitud": 718
+        }
+      ],
+      "ligandos_rcsb": [
+        "MN",
+        "PYR",
+        "BTI"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/3BG3",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "KCX",
+          "resi": 741,
+          "rol": "lisina carboxilada que une el Mn²⁺",
+          "encontrado": "KCX",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "mn_pyr",
+          "descripcion": "Mn²⁺ (cadena A) – átomo más cercano del piruvato (cadena A)",
+          "a": {
+            "chain": "A",
+            "het": "MN",
+            "atoms": [
+              "MN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "PYR"
+          },
+          "valor_A": 4.21,
+          "atomos": "A:MN2001:MN – A:PYR2000:O3",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "MN",
+              "resi": 2001,
+              "atom": "MN"
+            },
+            {
+              "chain": "A",
+              "resname": "PYR",
+              "resi": 2000,
+              "atom": "O3"
+            }
+          ]
+        },
+        {
+          "id": "bti_a_pyr_b",
+          "descripcion": "Biotina unida a la cadena A – átomo más cercano del piruvato del sitio activo de la cadena B (la biotina de una subunidad alcanza el sitio de carboxiltransferencia de la vecina)",
+          "a": {
+            "chain": "A",
+            "het": "BTI"
+          },
+          "b": {
+            "chain": "B",
+            "het": "PYR"
+          },
+          "valor_A": 3.7,
+          "atomos": "A:BTI2100:C6 – B:PYR2000:O",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "BTI",
+              "resi": 2100,
+              "atom": "C6"
+            },
+            {
+              "chain": "B",
+              "resname": "PYR",
+              "resi": 2000,
+              "atom": "O"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado"
+    },
+    {
+      "pdb_id": "1CA2",
+      "secciones": [
+        "S9"
+      ],
+      "organismo_esperado": "Homo sapiens",
+      "titulo_contiene": [
+        "CARBONIC ANHYDRASE II"
+      ],
+      "ligandos_ccd": [
+        "ZN"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 94,
+          "rol": "ligando del Zn"
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 96,
+          "rol": "ligando del Zn"
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 119,
+          "rol": "ligando del Zn"
+        },
+        {
+          "chain": "A",
+          "resname": "THR",
+          "resi": 199,
+          "rol": "orienta el agua/hidróxido"
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 64,
+          "rol": "lanzadera de protones"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "zn_his94",
+          "descripcion": "Zn – His94",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 94,
+            "atoms": [
+              "NE2",
+              "ND1"
+            ]
+          }
+        },
+        {
+          "id": "zn_his96",
+          "descripcion": "Zn – His96",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 96,
+            "atoms": [
+              "NE2",
+              "ND1"
+            ]
+          }
+        },
+        {
+          "id": "zn_his119",
+          "descripcion": "Zn – His119",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 119,
+            "atoms": [
+              "NE2",
+              "ND1"
+            ]
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "Anhidrasa carbónica II: Zn²⁺ coordinado por tres His (Tabla 6-1, diap. 23).",
+      "titulo_rcsb": "REFINED STRUCTURE OF HUMAN CARBONIC ANHYDRASE II AT 2.0 ANGSTROMS RESOLUTION",
+      "organismo": [
+        "Homo sapiens"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 2.0,
+      "fecha_deposito": "1989-02-06",
+      "referencia_primaria": {
+        "doi": "10.1002/prot.340040406",
+        "cita": "Eriksson, A.E. et al. Refined structure of human carbonic anhydrase II at 2.0 A resolution.. Proteins 1988;4:274"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "CARBONIC ANHYDRASE II",
+          "organismo": [
+            "Homo sapiens"
+          ],
+          "cadenas_auth": [
+            "A"
+          ],
+          "longitud": 259
+        }
+      ],
+      "ligandos_rcsb": [
+        "ZN"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/1CA2",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 94,
+          "rol": "ligando del Zn",
+          "encontrado": "HIS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 96,
+          "rol": "ligando del Zn",
+          "encontrado": "HIS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 119,
+          "rol": "ligando del Zn",
+          "encontrado": "HIS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "THR",
+          "resi": 199,
+          "rol": "orienta el agua/hidróxido",
+          "encontrado": "THR",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 64,
+          "rol": "lanzadera de protones",
+          "encontrado": "HIS",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "zn_his94",
+          "descripcion": "Zn – His94",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 94,
+            "atoms": [
+              "NE2",
+              "ND1"
+            ]
+          },
+          "valor_A": 1.99,
+          "atomos": "A:ZN262:ZN – A:HIS94:NE2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "ZN",
+              "resi": 262,
+              "atom": "ZN"
+            },
+            {
+              "chain": "A",
+              "resname": "HIS",
+              "resi": 94,
+              "atom": "NE2"
+            }
+          ]
+        },
+        {
+          "id": "zn_his96",
+          "descripcion": "Zn – His96",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 96,
+            "atoms": [
+              "NE2",
+              "ND1"
+            ]
+          },
+          "valor_A": 2.1,
+          "atomos": "A:ZN262:ZN – A:HIS96:NE2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "ZN",
+              "resi": 262,
+              "atom": "ZN"
+            },
+            {
+              "chain": "A",
+              "resname": "HIS",
+              "resi": 96,
+              "atom": "NE2"
+            }
+          ]
+        },
+        {
+          "id": "zn_his119",
+          "descripcion": "Zn – His119",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 119,
+            "atoms": [
+              "NE2",
+              "ND1"
+            ]
+          },
+          "valor_A": 1.91,
+          "atomos": "A:ZN262:ZN – A:HIS119:ND1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "ZN",
+              "resi": 262,
+              "atom": "ZN"
+            },
+            {
+              "chain": "A",
+              "resname": "HIS",
+              "resi": 119,
+              "atom": "ND1"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado"
+    },
+    {
+      "pdb_id": "1QIN",
+      "secciones": [
+        "S9"
+      ],
+      "organismo_esperado": "Homo sapiens",
+      "titulo_contiene": [
+        "GLYOXALASE I"
+      ],
+      "ligandos_ccd": [
+        "ZN",
+        "GIP"
+      ],
+      "cadenas_usadas": [
+        "A",
+        "B"
+      ],
+      "conteo_ligandos": {
+        "ZN": 2
+      },
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "GLN",
+          "resi": 33,
+          "rol": "ligando del Zn de la cadena A"
+        },
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 99,
+          "rol": "ligando del Zn de la cadena A"
+        },
+        {
+          "chain": "B",
+          "resname": "HIS",
+          "resi": 126,
+          "rol": "ligando del Zn de la cadena A (viene de la otra subunidad)"
+        },
+        {
+          "chain": "B",
+          "resname": "GLU",
+          "resi": 172,
+          "rol": "vecino del Zn de la cadena A (3,25 Å: NO coordina directamente en este complejo con inhibidor)"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "zn401_gln33",
+          "descripcion": "Zn A401 – Gln33 de la cadena A",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "resi": 401,
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 33,
+            "atoms": [
+              "OE1",
+              "NE2"
+            ]
+          }
+        },
+        {
+          "id": "zn401_glu99",
+          "descripcion": "Zn A401 – Glu99 de la cadena A",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "resi": 401,
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 99,
+            "atoms": [
+              "OE1",
+              "OE2"
+            ]
+          }
+        },
+        {
+          "id": "zn401_his126",
+          "descripcion": "Zn A401 – His126 de la cadena B",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "resi": 401,
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "B",
+            "resi": 126,
+            "atoms": [
+              "NE2",
+              "ND1"
+            ]
+          }
+        },
+        {
+          "id": "zn401_glu172",
+          "descripcion": "Zn A401 – Glu172 de la cadena B",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "resi": 401,
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "B",
+            "resi": 172,
+            "atoms": [
+              "OE1",
+              "OE2"
+            ]
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "Diap. 23: 'la glioxalasa I humana necesita dos iones de zinc'. En la estructura se contará cuántos Zn hay y a qué sitio activo pertenecen.",
+      "titulo_rcsb": "HUMAN GLYOXALASE I COMPLEXED WITH S-(N-HYDROXY-N-P-IODOPHENYLCARBAMOYL) GLUTATHIONE",
+      "organismo": [
+        "Homo sapiens"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 2.0,
+      "fecha_deposito": "1999-06-14",
+      "referencia_primaria": {
+        "doi": "10.1021/bi990696c",
+        "cita": "Cameron, A.D. et al. Reaction mechanism of glyoxalase I explored by an X-ray crystallographic analysis of the human enzyme in complex with a transition state analogue.. Biochemistry 1999;38:13480"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "PROTEIN (LACTOYLGLUTATHIONE LYASE)",
+          "organismo": [
+            "Homo sapiens"
+          ],
+          "cadenas_auth": [
+            "A",
+            "B"
+          ],
+          "longitud": 183
+        }
+      ],
+      "ligandos_rcsb": [
+        "ZN",
+        "GIP"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/1QIN",
+      "n_modelos": 1,
+      "conteo_ligandos_medido": {
+        "ZN": 2
+      },
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "GLN",
+          "resi": 33,
+          "rol": "ligando del Zn de la cadena A",
+          "encontrado": "GLN",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 99,
+          "rol": "ligando del Zn de la cadena A",
+          "encontrado": "GLU",
+          "ok": true
+        },
+        {
+          "chain": "B",
+          "resname": "HIS",
+          "resi": 126,
+          "rol": "ligando del Zn de la cadena A (viene de la otra subunidad)",
+          "encontrado": "HIS",
+          "ok": true
+        },
+        {
+          "chain": "B",
+          "resname": "GLU",
+          "resi": 172,
+          "rol": "vecino del Zn de la cadena A (3,25 Å: NO coordina directamente en este complejo con inhibidor)",
+          "encontrado": "GLU",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "zn401_gln33",
+          "descripcion": "Zn A401 – Gln33 de la cadena A",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "resi": 401,
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 33,
+            "atoms": [
+              "OE1",
+              "NE2"
+            ]
+          },
+          "valor_A": 2.05,
+          "atomos": "A:ZN401:ZN – A:GLN33:OE1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "ZN",
+              "resi": 401,
+              "atom": "ZN"
+            },
+            {
+              "chain": "A",
+              "resname": "GLN",
+              "resi": 33,
+              "atom": "OE1"
+            }
+          ]
+        },
+        {
+          "id": "zn401_glu99",
+          "descripcion": "Zn A401 – Glu99 de la cadena A",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "resi": 401,
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 99,
+            "atoms": [
+              "OE1",
+              "OE2"
+            ]
+          },
+          "valor_A": 1.91,
+          "atomos": "A:ZN401:ZN – A:GLU99:OE1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "ZN",
+              "resi": 401,
+              "atom": "ZN"
+            },
+            {
+              "chain": "A",
+              "resname": "GLU",
+              "resi": 99,
+              "atom": "OE1"
+            }
+          ]
+        },
+        {
+          "id": "zn401_his126",
+          "descripcion": "Zn A401 – His126 de la cadena B",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "resi": 401,
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "B",
+            "resi": 126,
+            "atoms": [
+              "NE2",
+              "ND1"
+            ]
+          },
+          "valor_A": 2.05,
+          "atomos": "A:ZN401:ZN – B:HIS126:NE2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "ZN",
+              "resi": 401,
+              "atom": "ZN"
+            },
+            {
+              "chain": "B",
+              "resname": "HIS",
+              "resi": 126,
+              "atom": "NE2"
+            }
+          ]
+        },
+        {
+          "id": "zn401_glu172",
+          "descripcion": "Zn A401 – Glu172 de la cadena B",
+          "a": {
+            "chain": "A",
+            "het": "ZN",
+            "resi": 401,
+            "atoms": [
+              "ZN"
+            ]
+          },
+          "b": {
+            "chain": "B",
+            "resi": 172,
+            "atoms": [
+              "OE1",
+              "OE2"
+            ]
+          },
+          "valor_A": 3.25,
+          "atomos": "A:ZN401:ZN – B:GLU172:OE1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "ZN",
+              "resi": 401,
+              "atom": "ZN"
+            },
+            {
+              "chain": "B",
+              "resname": "GLU",
+              "resi": 172,
+              "atom": "OE1"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado",
+      "numeracion_nota": "El dímero contiene 2 Zn (A401 y B301): uno por sitio activo. Cada Zn lo coordinan Gln33 y Glu99 de una subunidad y His126 de la otra. Los GIP están en A300 y B400 (la asignación de residuos HET no coincide con la del Zn de la misma letra)."
+    },
+    {
+      "pdb_id": "1DGF",
+      "secciones": [
+        "S5",
+        "S9"
+      ],
+      "organismo_esperado": "Homo sapiens",
+      "titulo_contiene": [
+        "CATALASE"
+      ],
+      "ligandos_ccd": [
+        "HEM",
+        "NDP"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 75,
+          "rol": "histidina distal"
+        },
+        {
+          "chain": "A",
+          "resname": "ASN",
+          "resi": 148,
+          "rol": "asparagina distal"
+        },
+        {
+          "chain": "A",
+          "resname": "TYR",
+          "resi": 358,
+          "rol": "ligando axial (proximal) del hierro"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "fe_tyr358",
+          "descripcion": "Fe del hemo – Tyr358 (O del fenolato)",
+          "a": {
+            "chain": "A",
+            "het": "HEM",
+            "atoms": [
+              "FE"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 358,
+            "atoms": [
+              "OH"
+            ]
+          }
+        },
+        {
+          "id": "fe_his75",
+          "descripcion": "Fe del hemo – His75 (Nε2)",
+          "a": {
+            "chain": "A",
+            "het": "HEM",
+            "atoms": [
+              "FE"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 75,
+            "atoms": [
+              "NE2"
+            ]
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "Catalasa humana (diap. 13): hemo con Fe como cofactor/grupo prostético; NADPH unido en las cadenas A y C.",
+      "titulo_rcsb": "HUMAN ERYTHROCYTE CATALASE",
+      "organismo": [
+        "Homo sapiens"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 1.5,
+      "fecha_deposito": "1999-11-24",
+      "referencia_primaria": {
+        "doi": "10.1006/jmbi.1999.3458",
+        "cita": "Putnam, C.D. et al. Active and inhibited human catalase structures: ligand and NADPH binding and catalytic mechanism.. J Mol Biol 2000;296:295"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "CATALASE",
+          "organismo": [
+            "Homo sapiens"
+          ],
+          "cadenas_auth": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "longitud": 497
+        }
+      ],
+      "ligandos_rcsb": [
+        "ACT",
+        "HEM",
+        "NDP"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/1DGF",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 75,
+          "rol": "histidina distal",
+          "encontrado": "HIS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "ASN",
+          "resi": 148,
+          "rol": "asparagina distal",
+          "encontrado": "ASN",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "TYR",
+          "resi": 358,
+          "rol": "ligando axial (proximal) del hierro",
+          "encontrado": "TYR",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "fe_tyr358",
+          "descripcion": "Fe del hemo – Tyr358 (O del fenolato)",
+          "a": {
+            "chain": "A",
+            "het": "HEM",
+            "atoms": [
+              "FE"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 358,
+            "atoms": [
+              "OH"
+            ]
+          },
+          "valor_A": 1.94,
+          "atomos": "A:HEM3000:FE – A:TYR358:OH",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "HEM",
+              "resi": 3000,
+              "atom": "FE"
+            },
+            {
+              "chain": "A",
+              "resname": "TYR",
+              "resi": 358,
+              "atom": "OH"
+            }
+          ]
+        },
+        {
+          "id": "fe_his75",
+          "descripcion": "Fe del hemo – His75 (Nε2)",
+          "a": {
+            "chain": "A",
+            "het": "HEM",
+            "atoms": [
+              "FE"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 75,
+            "atoms": [
+              "NE2"
+            ]
+          },
+          "valor_A": 4.7,
+          "atomos": "A:HEM3000:FE – A:HIS75:NE2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "HEM",
+              "resi": 3000,
+              "atom": "FE"
+            },
+            {
+              "chain": "A",
+              "resname": "HIS",
+              "resi": 75,
+              "atom": "NE2"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado"
+    },
+    {
+      "pdb_id": "1ATP",
+      "secciones": [
+        "S11"
+      ],
+      "organismo_esperado": "Mus musculus",
+      "titulo_contiene": [
+        "cAMP-dependent protein kinase",
+        "MNATP"
+      ],
+      "ligandos_ccd": [
+        "ATP",
+        "MN"
+      ],
+      "cadenas_usadas": [
+        "E"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "E",
+          "resname": "LYS",
+          "resi": 72,
+          "rol": "une fosfatos α/β del ATP"
+        },
+        {
+          "chain": "E",
+          "resname": "ASP",
+          "resi": 184,
+          "rol": "une metales (motivo DFG)"
+        },
+        {
+          "chain": "E",
+          "resname": "GLU",
+          "resi": 170,
+          "rol": "sitio activo"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "lys72_atp",
+          "descripcion": "Lys72 (Nζ) – átomo más cercano de ATP",
+          "a": {
+            "chain": "E",
+            "resi": 72,
+            "atoms": [
+              "NZ"
+            ]
+          },
+          "b": {
+            "chain": "E",
+            "het": "ATP"
+          }
+        },
+        {
+          "id": "mn_atp",
+          "descripcion": "Mn²⁺ – átomo más cercano de ATP",
+          "a": {
+            "chain": "E",
+            "het": "MN",
+            "atoms": [
+              "MN"
+            ]
+          },
+          "b": {
+            "chain": "E",
+            "het": "ATP"
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "ATP unido a una quinasa con iones metálicos (diap. 33–35). Los metales son Mn²⁺ en el cristal, no Mg²⁺ (que es el fisiológico).",
+      "titulo_rcsb": "2.2 angstrom refined crystal structure of the catalytic subunit of cAMP-dependent protein kinase complexed with MNATP and a peptide inhibitor",
+      "organismo": [
+        "Mus musculus"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 2.2,
+      "fecha_deposito": "1993-01-08",
+      "referencia_primaria": {
+        "doi": "10.1107/S0907444993000423",
+        "cita": "Zheng, J. et al. 2.2 A refined crystal structure of the catalytic subunit of cAMP-dependent protein kinase complexed with MnATP and a peptide inhibitor.. Acta Crystallogr D Biol Crystallogr 1993;49:362"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "cAMP-DEPENDENT PROTEIN KINASE",
+          "organismo": [
+            "Mus musculus"
+          ],
+          "cadenas_auth": [
+            "E"
+          ],
+          "longitud": 350
+        },
+        {
+          "entidad": "2",
+          "descripcion": "PEPTIDE INHIBITOR PKI(5-24)",
+          "organismo": [
+            "Mus musculus"
+          ],
+          "cadenas_auth": [
+            "I"
+          ],
+          "longitud": 20
+        }
+      ],
+      "ligandos_rcsb": [
+        "MN",
+        "ATP"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/1ATP",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "E",
+          "resname": "LYS",
+          "resi": 72,
+          "rol": "une fosfatos α/β del ATP",
+          "encontrado": "LYS",
+          "ok": true
+        },
+        {
+          "chain": "E",
+          "resname": "ASP",
+          "resi": 184,
+          "rol": "une metales (motivo DFG)",
+          "encontrado": "ASP",
+          "ok": true
+        },
+        {
+          "chain": "E",
+          "resname": "GLU",
+          "resi": 170,
+          "rol": "sitio activo",
+          "encontrado": "GLU",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "lys72_atp",
+          "descripcion": "Lys72 (Nζ) – átomo más cercano de ATP",
+          "a": {
+            "chain": "E",
+            "resi": 72,
+            "atoms": [
+              "NZ"
+            ]
+          },
+          "b": {
+            "chain": "E",
+            "het": "ATP"
+          },
+          "valor_A": 2.52,
+          "atomos": "E:LYS72:NZ – E:ATP355:O1A",
+          "par": [
+            {
+              "chain": "E",
+              "resname": "LYS",
+              "resi": 72,
+              "atom": "NZ"
+            },
+            {
+              "chain": "E",
+              "resname": "ATP",
+              "resi": 355,
+              "atom": "O1A"
+            }
+          ]
+        },
+        {
+          "id": "mn_atp",
+          "descripcion": "Mn²⁺ – átomo más cercano de ATP",
+          "a": {
+            "chain": "E",
+            "het": "MN",
+            "atoms": [
+              "MN"
+            ]
+          },
+          "b": {
+            "chain": "E",
+            "het": "ATP"
+          },
+          "valor_A": 1.99,
+          "atomos": "E:MN352:MN – E:ATP355:O2A",
+          "par": [
+            {
+              "chain": "E",
+              "resname": "MN",
+              "resi": 352,
+              "atom": "MN"
+            },
+            {
+              "chain": "E",
+              "resname": "ATP",
+              "resi": 355,
+              "atom": "O2A"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado"
+    },
+    {
+      "pdb_id": "1U72",
+      "secciones": [
+        "S18"
+      ],
+      "organismo_esperado": "Homo sapiens",
+      "titulo_contiene": [
+        "Dihydrfolate reductase",
+        "Methotrexate"
+      ],
+      "ligandos_ccd": [
+        "MTX",
+        "NDP"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 30,
+          "rol": "une el anillo de pteridina del inhibidor"
+        },
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 70,
+          "rol": "une el carboxilato del glutamato"
+        },
+        {
+          "chain": "A",
+          "resname": "PHE",
+          "resi": 34,
+          "rol": "contacto hidrofóbico"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "glu30_mtx",
+          "descripcion": "Glu30 (carboxilato) – átomo más cercano de metotrexato",
+          "a": {
+            "chain": "A",
+            "resi": 30,
+            "atoms": [
+              "OE1",
+              "OE2"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "MTX"
+          }
+        },
+        {
+          "id": "ndph_c4_mtx",
+          "descripcion": "C4 del nicotinamida (NADPH) – átomo más cercano de metotrexato",
+          "a": {
+            "chain": "A",
+            "het": "NDP",
+            "atoms": [
+              "C4N"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "MTX"
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "Metotrexato ocupa el sitio del sustrato (dihidrofolato) de la DHFR: ejemplo de inhibidor competitivo (verificar tipo de inhibición en literatura).",
+      "titulo_rcsb": "Understanding the Role of Leu22 Variants in Methotrexate Resistance: Comparison of Wild-type and Leu22Arg Variant Mouse and Human Dihydrfolate Reductase Ternary Crystal Complexes with Methotrexate and NADPH",
+      "organismo": [
+        "Homo sapiens"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 1.9,
+      "fecha_deposito": "2004-08-02",
+      "referencia_primaria": {
+        "doi": "10.1107/S0907444904030422",
+        "cita": "Cody, V. et al. Understanding the role of Leu22 variants in methotrexate resistance: comparison of wild-type and Leu22Arg variant mouse and human dihydrofolate reductase ternary crystal complexes with methotrexate and NADPH.. Acta Crystallogr D Biol Crystallogr 2005;61:147"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "Dihydrofolate reductase",
+          "organismo": [
+            "Homo sapiens"
+          ],
+          "cadenas_auth": [
+            "A"
+          ],
+          "longitud": 186
+        }
+      ],
+      "ligandos_rcsb": [
+        "NDP",
+        "MTX"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/1U72",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 30,
+          "rol": "une el anillo de pteridina del inhibidor",
+          "encontrado": "GLU",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 70,
+          "rol": "une el carboxilato del glutamato",
+          "encontrado": "ARG",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "PHE",
+          "resi": 34,
+          "rol": "contacto hidrofóbico",
+          "encontrado": "PHE",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "glu30_mtx",
+          "descripcion": "Glu30 (carboxilato) – átomo más cercano de metotrexato",
+          "a": {
+            "chain": "A",
+            "resi": 30,
+            "atoms": [
+              "OE1",
+              "OE2"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "MTX"
+          },
+          "valor_A": 2.94,
+          "atomos": "A:GLU30:OE2 – A:MTX188:N1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "GLU",
+              "resi": 30,
+              "atom": "OE2"
+            },
+            {
+              "chain": "A",
+              "resname": "MTX",
+              "resi": 188,
+              "atom": "N1"
+            }
+          ]
+        },
+        {
+          "id": "ndph_c4_mtx",
+          "descripcion": "C4 del nicotinamida (NADPH) – átomo más cercano de metotrexato",
+          "a": {
+            "chain": "A",
+            "het": "NDP",
+            "atoms": [
+              "C4N"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "MTX"
+          },
+          "valor_A": 3.35,
+          "atomos": "A:NDP187:C4N – A:MTX188:N5",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "NDP",
+              "resi": 187,
+              "atom": "C4N"
+            },
+            {
+              "chain": "A",
+              "resname": "MTX",
+              "resi": 188,
+              "atom": "N5"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado",
+      "referencia_tipo_inhibicion": {
+        "doi": "10.1074/jbc.M109.018010",
+        "nota": "Resumen: 'Methotrexate is a slow, tight-binding, competitive inhibitor of human dihydrofolate reductase' (frente al sustrato dihidrofolato; no se leyó el texto completo).",
+        "estado": "verificado (resumen)"
+      }
+    },
+    {
+      "pdb_id": "4PH9",
+      "secciones": [
+        "S18",
+        "S19"
+      ],
+      "organismo_esperado": "Mus musculus",
+      "titulo_contiene": [
+        "Ibuprofen",
+        "cyclooxygenase-2"
+      ],
+      "ligandos_ccd": [
+        "IBP",
+        "HEM"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 121,
+          "rol": "une el carboxilato del AINE (numeración convencional COX: 120)"
+        },
+        {
+          "chain": "A",
+          "resname": "TYR",
+          "resi": 356,
+          "rol": "une el carboxilato del AINE (numeración convencional COX: 355)"
+        },
+        {
+          "chain": "A",
+          "resname": "SER",
+          "resi": 531,
+          "rol": "serina acetilada por la aspirina (numeración convencional COX: 530)"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "arg121_ibp",
+          "descripcion": "Arg121 – átomo más cercano de ibuprofeno",
+          "a": {
+            "chain": "A",
+            "resi": 121,
+            "atoms": [
+              "NH1",
+              "NH2",
+              "NE"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "IBP"
+          }
+        },
+        {
+          "id": "tyr356_ibp",
+          "descripcion": "Tyr356 (OH) – átomo más cercano de ibuprofeno",
+          "a": {
+            "chain": "A",
+            "resi": 356,
+            "atoms": [
+              "OH"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "IBP"
+          }
+        },
+        {
+          "id": "ser531_ibp",
+          "descripcion": "Ser531 (Oγ) – átomo más cercano de ibuprofeno",
+          "a": {
+            "chain": "A",
+            "resi": 531,
+            "atoms": [
+              "OG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "IBP"
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "Ibuprofeno unido a COX-2 DE RATÓN (no COX-1): inhibidor reversible de un AINE. Rotular como COX-2 murina.",
+      "titulo_rcsb": "The structure of Ibuprofen bound to cyclooxygenase-2",
+      "organismo": [
+        "Mus musculus"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 1.81,
+      "fecha_deposito": "2014-05-05",
+      "referencia_primaria": {
+        "doi": "10.1016/j.jsb.2014.11.005",
+        "cita": "Orlando, B.J. et al. The structure of ibuprofen bound to cyclooxygenase-2.. J Struct Biol 2015;189:62"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "Prostaglandin G/H synthase 2",
+          "organismo": [
+            "Mus musculus"
+          ],
+          "cadenas_auth": [
+            "A",
+            "B"
+          ],
+          "longitud": 551
+        }
+      ],
+      "ligandos_rcsb": [
+        "IBP",
+        "HEM",
+        "BOG",
+        "NAG",
+        "AKR",
+        "EDO"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/4PH9",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 121,
+          "rol": "une el carboxilato del AINE (numeración convencional COX: 120)",
+          "encontrado": "ARG",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "TYR",
+          "resi": 356,
+          "rol": "une el carboxilato del AINE (numeración convencional COX: 355)",
+          "encontrado": "TYR",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "SER",
+          "resi": 531,
+          "rol": "serina acetilada por la aspirina (numeración convencional COX: 530)",
+          "encontrado": "SER",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "arg121_ibp",
+          "descripcion": "Arg121 – átomo más cercano de ibuprofeno",
+          "a": {
+            "chain": "A",
+            "resi": 121,
+            "atoms": [
+              "NH1",
+              "NH2",
+              "NE"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "IBP"
+          },
+          "valor_A": 2.97,
+          "atomos": "A:ARG121:NE – A:IBP601:O1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "ARG",
+              "resi": 121,
+              "atom": "NE"
+            },
+            {
+              "chain": "A",
+              "resname": "IBP",
+              "resi": 601,
+              "atom": "O1"
+            }
+          ]
+        },
+        {
+          "id": "tyr356_ibp",
+          "descripcion": "Tyr356 (OH) – átomo más cercano de ibuprofeno",
+          "a": {
+            "chain": "A",
+            "resi": 356,
+            "atoms": [
+              "OH"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "IBP"
+          },
+          "valor_A": 2.42,
+          "atomos": "A:TYR356:OH – A:IBP601:O2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "TYR",
+              "resi": 356,
+              "atom": "OH"
+            },
+            {
+              "chain": "A",
+              "resname": "IBP",
+              "resi": 601,
+              "atom": "O2"
+            }
+          ]
+        },
+        {
+          "id": "ser531_ibp",
+          "descripcion": "Ser531 (Oγ) – átomo más cercano de ibuprofeno",
+          "a": {
+            "chain": "A",
+            "resi": 531,
+            "atoms": [
+              "OG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "IBP"
+          },
+          "valor_A": 3.36,
+          "atomos": "A:SER531:OG – A:IBP601:C5",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "SER",
+              "resi": 531,
+              "atom": "OG"
+            },
+            {
+              "chain": "A",
+              "resname": "IBP",
+              "resi": 601,
+              "atom": "C5"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado",
+      "numeracion_nota": "En este archivo los residuos son Arg121, Tyr356 y Ser531 (verificado en el mmCIF por contacto con el carboxilato del ibuprofeno). La literatura de COX usa la numeración convencional Arg120/Tyr355/Ser530; esa equivalencia no se pudo comprobar en el artículo (no es de acceso abierto) [no verificado]."
+    },
+    {
+      "pdb_id": "1BT3",
+      "secciones": [
+        "S17"
+      ],
+      "organismo_esperado": "Ipomoea batatas",
+      "titulo_contiene": [
+        "CATECHOL OXIDASE"
+      ],
+      "ligandos_ccd": [
+        "C2O"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 88,
+          "rol": "ligando de Cu"
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 109,
+          "rol": "ligando de Cu"
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 118,
+          "rol": "ligando de Cu"
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 240,
+          "rol": "ligando de Cu"
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 244,
+          "rol": "ligando de Cu"
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 274,
+          "rol": "ligando de Cu"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "cu_his88",
+          "descripcion": "Cu más cercano – His88",
+          "a": {
+            "chain": "A",
+            "het": "C2O"
+          },
+          "b": {
+            "chain": "A",
+            "resi": 88,
+            "atoms": [
+              "NE2",
+              "ND1"
+            ]
+          }
+        },
+        {
+          "id": "cu_his240",
+          "descripcion": "Cu más cercano – His240",
+          "a": {
+            "chain": "A",
+            "het": "C2O"
+          },
+          "b": {
+            "chain": "A",
+            "resi": 240,
+            "atoms": [
+              "NE2",
+              "ND1"
+            ]
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "Catecol oxidasa (polifenol oxidasa de cobre) de CAMOTE, no de aguacate (diap. 59).",
+      "titulo_rcsb": "CATECHOL OXIDASE FROM IPOMOEA BATATAS (SWEET POTATOES) IN THE NATIVE CU(II)-CU(II) STATE",
+      "organismo": [
+        "Ipomoea batatas"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 2.5,
+      "fecha_deposito": "1998-09-02",
+      "referencia_primaria": {
+        "doi": "10.1038/4193",
+        "cita": "Klabunde, T. et al. Crystal structure of a plant catechol oxidase containing a dicopper center.. Nat Struct Biol 1998;5:1084"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "PROTEIN (CATECHOL OXIDASE)",
+          "organismo": [
+            "Ipomoea batatas"
+          ],
+          "cadenas_auth": [
+            "A"
+          ],
+          "longitud": 345
+        }
+      ],
+      "ligandos_rcsb": [
+        "C2O"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/1BT3",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 88,
+          "rol": "ligando de Cu",
+          "encontrado": "HIS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 109,
+          "rol": "ligando de Cu",
+          "encontrado": "HIS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 118,
+          "rol": "ligando de Cu",
+          "encontrado": "HIS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 240,
+          "rol": "ligando de Cu",
+          "encontrado": "HIS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 244,
+          "rol": "ligando de Cu",
+          "encontrado": "HIS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 274,
+          "rol": "ligando de Cu",
+          "encontrado": "HIS",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "cu_his88",
+          "descripcion": "Cu más cercano – His88",
+          "a": {
+            "chain": "A",
+            "het": "C2O"
+          },
+          "b": {
+            "chain": "A",
+            "resi": 88,
+            "atoms": [
+              "NE2",
+              "ND1"
+            ]
+          },
+          "valor_A": 2.17,
+          "atomos": "A:C2O500:CU2 – A:HIS88:NE2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "C2O",
+              "resi": 500,
+              "atom": "CU2"
+            },
+            {
+              "chain": "A",
+              "resname": "HIS",
+              "resi": 88,
+              "atom": "NE2"
+            }
+          ]
+        },
+        {
+          "id": "cu_his240",
+          "descripcion": "Cu más cercano – His240",
+          "a": {
+            "chain": "A",
+            "het": "C2O"
+          },
+          "b": {
+            "chain": "A",
+            "resi": 240,
+            "atoms": [
+              "NE2",
+              "ND1"
+            ]
+          },
+          "valor_A": 2.08,
+          "atomos": "A:C2O500:CU3 – A:HIS240:NE2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "C2O",
+              "resi": 500,
+              "atom": "CU3"
+            },
+            {
+              "chain": "A",
+              "resname": "HIS",
+              "resi": 240,
+              "atom": "NE2"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado"
+    },
+    {
+      "pdb_id": "4CHA",
+      "secciones": [
+        "S10"
+      ],
+      "organismo_esperado": "Bos taurus",
+      "titulo_contiene": [
+        "CHYMOTRYPSIN"
+      ],
+      "ligandos_ccd": [],
+      "cadenas_usadas": [
+        "B",
+        "C"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "B",
+          "resname": "HIS",
+          "resi": 57,
+          "rol": "tríada catalítica"
+        },
+        {
+          "chain": "B",
+          "resname": "ASP",
+          "resi": 102,
+          "rol": "tríada catalítica"
+        },
+        {
+          "chain": "C",
+          "resname": "SER",
+          "resi": 195,
+          "rol": "tríada catalítica"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "his57_ser195",
+          "descripcion": "His57 (Nε2) – Ser195 (Oγ)",
+          "a": {
+            "chain": "B",
+            "resi": 57,
+            "atoms": [
+              "NE2"
+            ]
+          },
+          "b": {
+            "chain": "C",
+            "resi": 195,
+            "atoms": [
+              "OG"
+            ]
+          }
+        },
+        {
+          "id": "asp102_his57",
+          "descripcion": "Asp102 (carboxilato) – His57 (Nδ1)",
+          "a": {
+            "chain": "B",
+            "resi": 102,
+            "atoms": [
+              "OD1",
+              "OD2"
+            ]
+          },
+          "b": {
+            "chain": "B",
+            "resi": 57,
+            "atoms": [
+              "ND1"
+            ]
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "Tríada catalítica Ser195–His57–Asp102 de la quimotripsina (opcional). Sin sustrato.",
+      "titulo_rcsb": "STRUCTURE OF ALPHA-*CHYMOTRYPSIN REFINED AT 1.68 ANGSTROMS RESOLUTION",
+      "organismo": [
+        "Bos taurus"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 1.68,
+      "fecha_deposito": "1984-11-26",
+      "referencia_primaria": {
+        "doi": "10.1016/0022-2836(85)90314-6",
+        "cita": "Tsukada, H. et al. Structure of alpha-chymotrypsin refined at 1.68 A resolution.. J Mol Biol 1985;184:703"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "ALPHA-CHYMOTRYPSIN A",
+          "organismo": [
+            "Bos taurus"
+          ],
+          "cadenas_auth": [
+            "A",
+            "E"
+          ],
+          "longitud": 13
+        },
+        {
+          "entidad": "2",
+          "descripcion": "ALPHA-CHYMOTRYPSIN A",
+          "organismo": [
+            "Bos taurus"
+          ],
+          "cadenas_auth": [
+            "B",
+            "F"
+          ],
+          "longitud": 131
+        },
+        {
+          "entidad": "3",
+          "descripcion": "ALPHA-CHYMOTRYPSIN A",
+          "organismo": [
+            "Bos taurus"
+          ],
+          "cadenas_auth": [
+            "C",
+            "G"
+          ],
+          "longitud": 97
+        }
+      ],
+      "ligandos_rcsb": [],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/4CHA",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "B",
+          "resname": "HIS",
+          "resi": 57,
+          "rol": "tríada catalítica",
+          "encontrado": "HIS",
+          "ok": true
+        },
+        {
+          "chain": "B",
+          "resname": "ASP",
+          "resi": 102,
+          "rol": "tríada catalítica",
+          "encontrado": "ASP",
+          "ok": true
+        },
+        {
+          "chain": "C",
+          "resname": "SER",
+          "resi": 195,
+          "rol": "tríada catalítica",
+          "encontrado": "SER",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "his57_ser195",
+          "descripcion": "His57 (Nε2) – Ser195 (Oγ)",
+          "a": {
+            "chain": "B",
+            "resi": 57,
+            "atoms": [
+              "NE2"
+            ]
+          },
+          "b": {
+            "chain": "C",
+            "resi": 195,
+            "atoms": [
+              "OG"
+            ]
+          },
+          "valor_A": 2.82,
+          "atomos": "B:HIS57:NE2 – C:SER195:OG",
+          "par": [
+            {
+              "chain": "B",
+              "resname": "HIS",
+              "resi": 57,
+              "atom": "NE2"
+            },
+            {
+              "chain": "C",
+              "resname": "SER",
+              "resi": 195,
+              "atom": "OG"
+            }
+          ]
+        },
+        {
+          "id": "asp102_his57",
+          "descripcion": "Asp102 (carboxilato) – His57 (Nδ1)",
+          "a": {
+            "chain": "B",
+            "resi": 102,
+            "atoms": [
+              "OD1",
+              "OD2"
+            ]
+          },
+          "b": {
+            "chain": "B",
+            "resi": 57,
+            "atoms": [
+              "ND1"
+            ]
+          },
+          "valor_A": 2.61,
+          "atomos": "B:ASP102:OD1 – B:HIS57:ND1",
+          "par": [
+            {
+              "chain": "B",
+              "resname": "ASP",
+              "resi": 102,
+              "atom": "OD1"
+            },
+            {
+              "chain": "B",
+              "resname": "HIS",
+              "resi": 57,
+              "atom": "ND1"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado"
+    },
+    {
+      "pdb_id": "1A49",
+      "secciones": [
+        "S10"
+      ],
+      "organismo_esperado": "Oryctolagus cuniculus",
+      "titulo_contiene": [
+        "PYRUVATE KINASE",
+        "OXALATE"
+      ],
+      "ligandos_ccd": [
+        "K",
+        "OXL",
+        "MG",
+        "ATP"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 72,
+          "rol": "contacto con ATP y oxalato"
+        },
+        {
+          "chain": "A",
+          "resname": "LYS",
+          "resi": 269,
+          "rol": "contacto con el oxalato (análogo del enolpiruvato)"
+        },
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 271,
+          "rol": "ligando del Mg²⁺"
+        },
+        {
+          "chain": "A",
+          "resname": "ASP",
+          "resi": 295,
+          "rol": "ligando del Mg²⁺"
+        },
+        {
+          "chain": "A",
+          "resname": "THR",
+          "resi": 327,
+          "rol": "contacto con el oxalato"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "lys269_oxl",
+          "descripcion": "Lys269 (Nζ) – átomo más cercano del oxalato",
+          "a": {
+            "chain": "A",
+            "resi": 269,
+            "atoms": [
+              "NZ"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "OXL"
+          }
+        },
+        {
+          "id": "mg534_glu271",
+          "descripcion": "Mg²⁺ 534 – Glu271",
+          "a": {
+            "chain": "A",
+            "het": "MG",
+            "resi": 534,
+            "atoms": [
+              "MG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 271,
+            "atoms": [
+              "OE1",
+              "OE2"
+            ]
+          }
+        },
+        {
+          "id": "mg534_asp295",
+          "descripcion": "Mg²⁺ 534 – Asp295",
+          "a": {
+            "chain": "A",
+            "het": "MG",
+            "resi": 534,
+            "atoms": [
+              "MG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 295,
+            "atoms": [
+              "OD1",
+              "OD2"
+            ]
+          }
+        },
+        {
+          "id": "mg534_oxl",
+          "descripcion": "Mg²⁺ 534 – oxalato",
+          "a": {
+            "chain": "A",
+            "het": "MG",
+            "resi": 534,
+            "atoms": [
+              "MG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "OXL"
+          }
+        },
+        {
+          "id": "atp_pg_oxl",
+          "descripcion": "Fósforo γ del ATP – átomo más cercano del oxalato",
+          "a": {
+            "chain": "A",
+            "het": "ATP",
+            "atoms": [
+              "PG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "OXL"
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "Piruvato quinasa de músculo de conejo con Mg-ATP, K⁺ y oxalato (análogo del enolato de piruvato) [la analogía proviene del título del PDB; no verificada en el artículo]. Ejemplo opcional de tautomería ceto-enólica acoplada a fosforilación (S10).",
+      "titulo_rcsb": "BIS MG-ATP-K-OXALATE COMPLEX OF PYRUVATE KINASE",
+      "organismo": [
+        "Oryctolagus cuniculus"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 2.1,
+      "fecha_deposito": "1998-02-12",
+      "referencia_primaria": {
+        "doi": "10.1021/bi980243s",
+        "cita": "Larsen, T.M. et al. Structure of the bis(Mg2+)-ATP-oxalate complex of the rabbit muscle pyruvate kinase at 2.1 A resolution: ATP binding over a barrel.. Biochemistry 1998;37:6247"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "PYRUVATE KINASE",
+          "organismo": [
+            "Oryctolagus cuniculus"
+          ],
+          "cadenas_auth": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ],
+          "longitud": 530
+        }
+      ],
+      "ligandos_rcsb": [
+        "K",
+        "OXL",
+        "MG",
+        "ATP"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/1A49",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "ARG",
+          "resi": 72,
+          "rol": "contacto con ATP y oxalato",
+          "encontrado": "ARG",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "LYS",
+          "resi": 269,
+          "rol": "contacto con el oxalato (análogo del enolpiruvato)",
+          "encontrado": "LYS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 271,
+          "rol": "ligando del Mg²⁺",
+          "encontrado": "GLU",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "ASP",
+          "resi": 295,
+          "rol": "ligando del Mg²⁺",
+          "encontrado": "ASP",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "THR",
+          "resi": 327,
+          "rol": "contacto con el oxalato",
+          "encontrado": "THR",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "lys269_oxl",
+          "descripcion": "Lys269 (Nζ) – átomo más cercano del oxalato",
+          "a": {
+            "chain": "A",
+            "resi": 269,
+            "atoms": [
+              "NZ"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "OXL"
+          },
+          "valor_A": 2.68,
+          "atomos": "A:LYS269:NZ – A:OXL533:O1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "LYS",
+              "resi": 269,
+              "atom": "NZ"
+            },
+            {
+              "chain": "A",
+              "resname": "OXL",
+              "resi": 533,
+              "atom": "O1"
+            }
+          ]
+        },
+        {
+          "id": "mg534_glu271",
+          "descripcion": "Mg²⁺ 534 – Glu271",
+          "a": {
+            "chain": "A",
+            "het": "MG",
+            "resi": 534,
+            "atoms": [
+              "MG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 271,
+            "atoms": [
+              "OE1",
+              "OE2"
+            ]
+          },
+          "valor_A": 2.24,
+          "atomos": "A:MG534:MG – A:GLU271:OE1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "MG",
+              "resi": 534,
+              "atom": "MG"
+            },
+            {
+              "chain": "A",
+              "resname": "GLU",
+              "resi": 271,
+              "atom": "OE1"
+            }
+          ]
+        },
+        {
+          "id": "mg534_asp295",
+          "descripcion": "Mg²⁺ 534 – Asp295",
+          "a": {
+            "chain": "A",
+            "het": "MG",
+            "resi": 534,
+            "atoms": [
+              "MG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 295,
+            "atoms": [
+              "OD1",
+              "OD2"
+            ]
+          },
+          "valor_A": 2.15,
+          "atomos": "A:MG534:MG – A:ASP295:OD2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "MG",
+              "resi": 534,
+              "atom": "MG"
+            },
+            {
+              "chain": "A",
+              "resname": "ASP",
+              "resi": 295,
+              "atom": "OD2"
+            }
+          ]
+        },
+        {
+          "id": "mg534_oxl",
+          "descripcion": "Mg²⁺ 534 – oxalato",
+          "a": {
+            "chain": "A",
+            "het": "MG",
+            "resi": 534,
+            "atoms": [
+              "MG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "OXL"
+          },
+          "valor_A": 2.05,
+          "atomos": "A:MG534:MG – A:OXL533:O4",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "MG",
+              "resi": 534,
+              "atom": "MG"
+            },
+            {
+              "chain": "A",
+              "resname": "OXL",
+              "resi": 533,
+              "atom": "O4"
+            }
+          ]
+        },
+        {
+          "id": "atp_pg_oxl",
+          "descripcion": "Fósforo γ del ATP – átomo más cercano del oxalato",
+          "a": {
+            "chain": "A",
+            "het": "ATP",
+            "atoms": [
+              "PG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "het": "OXL"
+          },
+          "valor_A": 3.42,
+          "atomos": "A:ATP535:PG – A:OXL533:O1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "ATP",
+              "resi": 535,
+              "atom": "PG"
+            },
+            {
+              "chain": "A",
+              "resname": "OXL",
+              "resi": 533,
+              "atom": "O1"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado"
+    },
+    {
+      "pdb_id": "5FPQ",
+      "secciones": [
+        "S19"
+      ],
+      "organismo_esperado": "Homo sapiens",
+      "titulo_contiene": [
+        "acetylcholinesterase",
+        "sarin"
+      ],
+      "ligandos_ccd": [
+        "1PE"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "SGB",
+          "resi": 203,
+          "rol": "serina del sitio activo fosfonilada por sarín"
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 447,
+          "rol": "tríada catalítica"
+        },
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 334,
+          "rol": "tríada catalítica"
+        },
+        {
+          "chain": "A",
+          "resname": "GLY",
+          "resi": 121,
+          "rol": "hueco del oxianión"
+        },
+        {
+          "chain": "A",
+          "resname": "GLY",
+          "resi": 122,
+          "rol": "hueco del oxianión"
+        },
+        {
+          "chain": "A",
+          "resname": "ALA",
+          "resi": 204,
+          "rol": "hueco del oxianión"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "his447_sgb",
+          "descripcion": "His447 (Nε2) – átomo más cercano del aducto de sarín en Ser203",
+          "a": {
+            "chain": "A",
+            "resi": 447,
+            "atoms": [
+              "NE2"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 203,
+            "atoms": [
+              "P1",
+              "O1",
+              "O2",
+              "C1",
+              "C2",
+              "C3",
+              "C4"
+            ]
+          }
+        },
+        {
+          "id": "gly122_sgb",
+          "descripcion": "Gly122 (N) – átomo más cercano del grupo fosfonilo",
+          "a": {
+            "chain": "A",
+            "resi": 122,
+            "atoms": [
+              "N"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 203,
+            "atoms": [
+              "P1",
+              "O1",
+              "O2"
+            ]
+          }
+        },
+        {
+          "id": "ala204_sgb",
+          "descripcion": "Ala204 (N) – átomo más cercano del grupo fosfonilo",
+          "a": {
+            "chain": "A",
+            "resi": 204,
+            "atoms": [
+              "N"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 203,
+            "atoms": [
+              "P1",
+              "O1",
+              "O2"
+            ]
+          }
+        },
+        {
+          "id": "sgb_og_p1",
+          "descripcion": "Oγ de Ser203 – P del grupo fosfonilo (enlace covalente)",
+          "a": {
+            "chain": "A",
+            "resi": 203,
+            "atoms": [
+              "OG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 203,
+            "atoms": [
+              "P1"
+            ]
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "AChE humana con la Ser203 fosfonilada por sarín (mecanismo del DFP/sarín, diap. 61): inhibición irreversible covalente. SGB = aducto Ser–sarín como residuo modificado del PDB.",
+      "titulo_rcsb": "Structure of Homo sapiens acetylcholinesterase phosphonylated by sarin.",
+      "organismo": [
+        "Homo sapiens"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 2.4,
+      "fecha_deposito": "2015-12-02",
+      "referencia_primaria": {
+        "doi": "10.1073/PNAS.1523362113",
+        "cita": "Allgardsson, A. et al. Structure of a Prereaction Complex between the Nerve Agent Sarin, its Biological Target Acetylcholinesterase, and the Antidote Hi-6.. Proc Natl Acad Sci U S A 2016;113:5514"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "ACETYLCHOLINESTERASE",
+          "organismo": [
+            "Homo sapiens"
+          ],
+          "cadenas_auth": [
+            "A",
+            "B"
+          ],
+          "longitud": 542
+        }
+      ],
+      "ligandos_rcsb": [
+        "1PE"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/5FPQ",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "SGB",
+          "resi": 203,
+          "rol": "serina del sitio activo fosfonilada por sarín",
+          "encontrado": "SGB",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "HIS",
+          "resi": 447,
+          "rol": "tríada catalítica",
+          "encontrado": "HIS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "GLU",
+          "resi": 334,
+          "rol": "tríada catalítica",
+          "encontrado": "GLU",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "GLY",
+          "resi": 121,
+          "rol": "hueco del oxianión",
+          "encontrado": "GLY",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "GLY",
+          "resi": 122,
+          "rol": "hueco del oxianión",
+          "encontrado": "GLY",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "ALA",
+          "resi": 204,
+          "rol": "hueco del oxianión",
+          "encontrado": "ALA",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "his447_sgb",
+          "descripcion": "His447 (Nε2) – átomo más cercano del aducto de sarín en Ser203",
+          "a": {
+            "chain": "A",
+            "resi": 447,
+            "atoms": [
+              "NE2"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 203,
+            "atoms": [
+              "P1",
+              "O1",
+              "O2",
+              "C1",
+              "C2",
+              "C3",
+              "C4"
+            ]
+          },
+          "valor_A": 3.32,
+          "atomos": "A:HIS447:NE2 – A:SGB203:O2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "HIS",
+              "resi": 447,
+              "atom": "NE2"
+            },
+            {
+              "chain": "A",
+              "resname": "SGB",
+              "resi": 203,
+              "atom": "O2"
+            }
+          ]
+        },
+        {
+          "id": "gly122_sgb",
+          "descripcion": "Gly122 (N) – átomo más cercano del grupo fosfonilo",
+          "a": {
+            "chain": "A",
+            "resi": 122,
+            "atoms": [
+              "N"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 203,
+            "atoms": [
+              "P1",
+              "O1",
+              "O2"
+            ]
+          },
+          "valor_A": 2.53,
+          "atomos": "A:GLY122:N – A:SGB203:O1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "GLY",
+              "resi": 122,
+              "atom": "N"
+            },
+            {
+              "chain": "A",
+              "resname": "SGB",
+              "resi": 203,
+              "atom": "O1"
+            }
+          ]
+        },
+        {
+          "id": "ala204_sgb",
+          "descripcion": "Ala204 (N) – átomo más cercano del grupo fosfonilo",
+          "a": {
+            "chain": "A",
+            "resi": 204,
+            "atoms": [
+              "N"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 203,
+            "atoms": [
+              "P1",
+              "O1",
+              "O2"
+            ]
+          },
+          "valor_A": 3.0,
+          "atomos": "A:ALA204:N – A:SGB203:O1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "ALA",
+              "resi": 204,
+              "atom": "N"
+            },
+            {
+              "chain": "A",
+              "resname": "SGB",
+              "resi": 203,
+              "atom": "O1"
+            }
+          ]
+        },
+        {
+          "id": "sgb_og_p1",
+          "descripcion": "Oγ de Ser203 – P del grupo fosfonilo (enlace covalente)",
+          "a": {
+            "chain": "A",
+            "resi": 203,
+            "atoms": [
+              "OG"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 203,
+            "atoms": [
+              "P1"
+            ]
+          },
+          "valor_A": 1.62,
+          "atomos": "A:SGB203:OG – A:SGB203:P1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "SGB",
+              "resi": 203,
+              "atom": "OG"
+            },
+            {
+              "chain": "A",
+              "resname": "SGB",
+              "resi": 203,
+              "atom": "P1"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado"
+    },
+    {
+      "pdb_id": "5F19",
+      "secciones": [
+        "S19"
+      ],
+      "organismo_esperado": "Homo sapiens",
+      "titulo_contiene": [
+        "Aspirin Acetylated",
+        "Cyclooxygenase-2"
+      ],
+      "ligandos_ccd": [
+        "COH"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "OAS",
+          "resi": 530,
+          "rol": "serina 530 acetilada por la aspirina"
+        },
+        {
+          "chain": "A",
+          "resname": "TYR",
+          "resi": 385,
+          "rol": "residuo del canal contiguo a la Ser530"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "oas_tyr385",
+          "descripcion": "Acetilo de Ser530 – OH de Tyr385",
+          "a": {
+            "chain": "A",
+            "resi": 530,
+            "atoms": [
+              "C1A",
+              "C2A",
+              "OAC"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 385,
+            "atoms": [
+              "OH"
+            ]
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "COX-2 humana acetilada por aspirina en Ser530 (OAS = O-acetilserina): inhibición irreversible por acetilación covalente (diap. 65, caso AINE).",
+      "titulo_rcsb": "The Crystal Structure of Aspirin Acetylated Human Cyclooxygenase-2",
+      "organismo": [
+        "Homo sapiens"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 2.04,
+      "fecha_deposito": "2015-11-30",
+      "referencia_primaria": {
+        "doi": "10.1021/acs.biochem.5b01378",
+        "cita": "Lucido, M.J. et al. Crystal Structure of Aspirin-Acetylated Human Cyclooxygenase-2: Insight into the Formation of Products with Reversed Stereochemistry.. Biochemistry 2016;55:1226"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "Prostaglandin G/H synthase 2",
+          "organismo": [
+            "Homo sapiens"
+          ],
+          "cadenas_auth": [
+            "A",
+            "B"
+          ],
+          "longitud": 552
+        }
+      ],
+      "ligandos_rcsb": [
+        "COH",
+        "NAG",
+        "AKR",
+        "EDO",
+        "BOG"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/5F19",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "OAS",
+          "resi": 530,
+          "rol": "serina 530 acetilada por la aspirina",
+          "encontrado": "OAS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "TYR",
+          "resi": 385,
+          "rol": "residuo del canal contiguo a la Ser530",
+          "encontrado": "TYR",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "oas_tyr385",
+          "descripcion": "Acetilo de Ser530 – OH de Tyr385",
+          "a": {
+            "chain": "A",
+            "resi": 530,
+            "atoms": [
+              "C1A",
+              "C2A",
+              "OAC"
+            ]
+          },
+          "b": {
+            "chain": "A",
+            "resi": 385,
+            "atoms": [
+              "OH"
+            ]
+          },
+          "valor_A": 3.08,
+          "atomos": "A:OAS530:OAC – A:TYR385:OH",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "OAS",
+              "resi": 530,
+              "atom": "OAC"
+            },
+            {
+              "chain": "A",
+              "resname": "TYR",
+              "resi": 385,
+              "atom": "OH"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado",
+      "referencia_aspirina_ser530": {
+        "doi": "10.1038/nsb0895-637",
+        "nota": "Resumen (Loll et al. 1995): 'Aspirin exerts its anti-inflammatory effects through selective acetylation of serine 530 on prostaglandin H2 synthase'.",
+        "estado": "verificado (resumen)"
+      }
+    },
+    {
+      "pdb_id": "1VRT",
+      "secciones": [
+        "S18"
+      ],
+      "organismo_esperado": "Human immunodeficiency virus 1",
+      "titulo_contiene": [
+        "HIV-1 RT"
+      ],
+      "ligandos_ccd": [
+        "NVP",
+        "MG"
+      ],
+      "cadenas_usadas": [
+        "A"
+      ],
+      "residuos_destacados": [
+        {
+          "chain": "A",
+          "resname": "LYS",
+          "resi": 101,
+          "rol": "bolsillo NNRTI"
+        },
+        {
+          "chain": "A",
+          "resname": "LYS",
+          "resi": 103,
+          "rol": "bolsillo NNRTI"
+        },
+        {
+          "chain": "A",
+          "resname": "TYR",
+          "resi": 181,
+          "rol": "bolsillo NNRTI"
+        },
+        {
+          "chain": "A",
+          "resname": "TYR",
+          "resi": 188,
+          "rol": "bolsillo NNRTI"
+        },
+        {
+          "chain": "A",
+          "resname": "ASP",
+          "resi": 110,
+          "rol": "sitio activo de la polimerasa"
+        },
+        {
+          "chain": "A",
+          "resname": "ASP",
+          "resi": 185,
+          "rol": "sitio activo de la polimerasa"
+        },
+        {
+          "chain": "A",
+          "resname": "ASP",
+          "resi": 186,
+          "rol": "sitio activo de la polimerasa"
+        }
+      ],
+      "distancias": [
+        {
+          "id": "nvp_tyr181",
+          "descripcion": "Nevirapina – Tyr181 (átomo más cercano)",
+          "a": {
+            "chain": "A",
+            "het": "NVP"
+          },
+          "b": {
+            "chain": "A",
+            "resi": 181
+          }
+        },
+        {
+          "id": "nvp_tyr188",
+          "descripcion": "Nevirapina – Tyr188 (átomo más cercano)",
+          "a": {
+            "chain": "A",
+            "het": "NVP"
+          },
+          "b": {
+            "chain": "A",
+            "resi": 188
+          }
+        },
+        {
+          "id": "nvp_asp185",
+          "descripcion": "Nevirapina – carboxilato de Asp185 (sitio activo de la polimerasa)",
+          "a": {
+            "chain": "A",
+            "het": "NVP"
+          },
+          "b": {
+            "chain": "A",
+            "resi": 185,
+            "atoms": [
+              "OD1",
+              "OD2"
+            ]
+          }
+        },
+        {
+          "id": "nvp_asp110",
+          "descripcion": "Nevirapina – carboxilato de Asp110 (sitio activo)",
+          "a": {
+            "chain": "A",
+            "het": "NVP"
+          },
+          "b": {
+            "chain": "A",
+            "resi": 110,
+            "atoms": [
+              "OD1",
+              "OD2"
+            ]
+          }
+        }
+      ],
+      "afirmacion_que_respalda": "Nevirapina unida a un bolsillo hidrofóbico alostérico de la transcriptasa inversa del VIH-1, a ~13–15 Å (medido) de los carboxilatos de Asp110/Asp185 del sitio activo de la polimerasa: ejemplo de inhibidor no competitivo (Spence et al., Science 1995, resumen consultado vía Europe PMC: 'noncompetitive inhibitors' que se unen a un bolsillo hidrofóbico del complejo enzima–ADN cerca de los residuos catalíticos).",
+      "titulo_rcsb": "HIGH RESOLUTION STRUCTURES OF HIV-1 RT FROM FOUR RT-INHIBITOR COMPLEXES",
+      "organismo": [
+        "Human immunodeficiency virus 1"
+      ],
+      "metodo": "X-RAY DIFFRACTION",
+      "resolucion_A": 2.2,
+      "fecha_deposito": "1995-04-19",
+      "referencia_primaria": {
+        "doi": "10.1038/nsb0495-293",
+        "cita": "Ren, J. et al. High resolution structures of HIV-1 RT from four RT-inhibitor complexes.. Nat Struct Biol 1995;2:293"
+      },
+      "polimeros": [
+        {
+          "entidad": "1",
+          "descripcion": "HIV-1 REVERSE TRANSCRIPTASE",
+          "organismo": [
+            "Human immunodeficiency virus 1"
+          ],
+          "cadenas_auth": [
+            "A"
+          ],
+          "longitud": 560
+        },
+        {
+          "entidad": "2",
+          "descripcion": "HIV-1 REVERSE TRANSCRIPTASE",
+          "organismo": [
+            "Human immunodeficiency virus 1"
+          ],
+          "cadenas_auth": [
+            "B"
+          ],
+          "longitud": 440
+        }
+      ],
+      "ligandos_rcsb": [
+        "MG",
+        "NVP"
+      ],
+      "verificado_el": "2026-10-14",
+      "verificado_via": "https://data.rcsb.org/rest/v1/core/entry/1VRT",
+      "n_modelos": 1,
+      "residuos_verificados": [
+        {
+          "chain": "A",
+          "resname": "LYS",
+          "resi": 101,
+          "rol": "bolsillo NNRTI",
+          "encontrado": "LYS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "LYS",
+          "resi": 103,
+          "rol": "bolsillo NNRTI",
+          "encontrado": "LYS",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "TYR",
+          "resi": 181,
+          "rol": "bolsillo NNRTI",
+          "encontrado": "TYR",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "TYR",
+          "resi": 188,
+          "rol": "bolsillo NNRTI",
+          "encontrado": "TYR",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "ASP",
+          "resi": 110,
+          "rol": "sitio activo de la polimerasa",
+          "encontrado": "ASP",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "ASP",
+          "resi": 185,
+          "rol": "sitio activo de la polimerasa",
+          "encontrado": "ASP",
+          "ok": true
+        },
+        {
+          "chain": "A",
+          "resname": "ASP",
+          "resi": 186,
+          "rol": "sitio activo de la polimerasa",
+          "encontrado": "ASP",
+          "ok": true
+        }
+      ],
+      "distancias_medidas": [
+        {
+          "id": "nvp_tyr181",
+          "descripcion": "Nevirapina – Tyr181 (átomo más cercano)",
+          "a": {
+            "chain": "A",
+            "het": "NVP"
+          },
+          "b": {
+            "chain": "A",
+            "resi": 181
+          },
+          "valor_A": 3.04,
+          "atomos": "A:NVP999:C5 – A:TYR181:CD2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "NVP",
+              "resi": 999,
+              "atom": "C5"
+            },
+            {
+              "chain": "A",
+              "resname": "TYR",
+              "resi": 181,
+              "atom": "CD2"
+            }
+          ]
+        },
+        {
+          "id": "nvp_tyr188",
+          "descripcion": "Nevirapina – Tyr188 (átomo más cercano)",
+          "a": {
+            "chain": "A",
+            "het": "NVP"
+          },
+          "b": {
+            "chain": "A",
+            "resi": 188
+          },
+          "valor_A": 3.54,
+          "atomos": "A:NVP999:N8 – A:TYR188:CD2",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "NVP",
+              "resi": 999,
+              "atom": "N8"
+            },
+            {
+              "chain": "A",
+              "resname": "TYR",
+              "resi": 188,
+              "atom": "CD2"
+            }
+          ]
+        },
+        {
+          "id": "nvp_asp185",
+          "descripcion": "Nevirapina – carboxilato de Asp185 (sitio activo de la polimerasa)",
+          "a": {
+            "chain": "A",
+            "het": "NVP"
+          },
+          "b": {
+            "chain": "A",
+            "resi": 185,
+            "atoms": [
+              "OD1",
+              "OD2"
+            ]
+          },
+          "valor_A": 14.58,
+          "atomos": "A:NVP999:CD – A:ASP185:OD1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "NVP",
+              "resi": 999,
+              "atom": "CD"
+            },
+            {
+              "chain": "A",
+              "resname": "ASP",
+              "resi": 185,
+              "atom": "OD1"
+            }
+          ]
+        },
+        {
+          "id": "nvp_asp110",
+          "descripcion": "Nevirapina – carboxilato de Asp110 (sitio activo)",
+          "a": {
+            "chain": "A",
+            "het": "NVP"
+          },
+          "b": {
+            "chain": "A",
+            "resi": 110,
+            "atoms": [
+              "OD1",
+              "OD2"
+            ]
+          },
+          "valor_A": 12.9,
+          "atomos": "A:NVP999:CD – A:ASP110:OD1",
+          "par": [
+            {
+              "chain": "A",
+              "resname": "NVP",
+              "resi": 999,
+              "atom": "CD"
+            },
+            {
+              "chain": "A",
+              "resname": "ASP",
+              "resi": 110,
+              "atom": "OD1"
+            }
+          ]
+        }
+      ],
+      "problemas": [],
+      "estado": "verificado",
+      "referencia_tipo_inhibicion": {
+        "doi": "10.1126/science.7532321",
+        "estado": "verificado (resumen)"
+      }
+    }
+  ]
+}

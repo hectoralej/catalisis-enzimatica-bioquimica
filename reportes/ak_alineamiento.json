@@ -1,0 +1,44 @@
+{
+  "A": {
+    "rmsd_core_A": 1.98,
+    "n_ca_core": 146,
+    "rmsd_todos_ca_tras_superponer_core_A": 7.97,
+    "n_ca_total": 214,
+    "desplazamiento_max_ca_A": 23.6,
+    "segmentos_que_se_mueven_gt4A": [
+      {
+        "desde": 32,
+        "hasta": 66,
+        "max_A": 18.2
+      },
+      {
+        "desde": 120,
+        "hasta": 162,
+        "max_A": 23.6
+      }
+    ],
+    "rmsd_NMPbind_30-59_A": 11.32,
+    "rmsd_LID_122-159_A": 15.53
+  },
+  "B": {
+    "rmsd_core_A": 1.96,
+    "n_ca_core": 146,
+    "rmsd_todos_ca_tras_superponer_core_A": 7.64,
+    "n_ca_total": 214,
+    "desplazamiento_max_ca_A": 22.9,
+    "segmentos_que_se_mueven_gt4A": [
+      {
+        "desde": 32,
+        "hasta": 67,
+        "max_A": 17.9
+      },
+      {
+        "desde": 120,
+        "hasta": 162,
+        "max_A": 22.9
+      }
+    ],
+    "rmsd_NMPbind_30-59_A": 11.01,
+    "rmsd_LID_122-159_A": 14.77
+  }
+}

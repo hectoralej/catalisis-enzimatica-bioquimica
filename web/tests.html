@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pruebas de matemática</title>
+<style>body{font:15px/1.5 system-ui,sans-serif;max-width:900px;margin:20px auto;padding:0 16px}li{margin:4px 0}.ok{color:#00795a}.no{color:#b3400a;font-weight:700}</style></head>
+<body><h1>Pruebas de <code>math.js</code></h1><p id="sum">Ejecutando…</p><ul id="out"></ul>
+<script src="js/math.js"></script><script src="js/math_tests.js"></script>
+<script>
+var r = TCMathTests(TCMath);
+document.getElementById("sum").textContent = r.total + " pruebas, " + r.fallos + " fallos";
+document.title = (r.fallos ? "FALLO " : "OK ") + r.total;
+document.getElementById("out").innerHTML = r.results.map(function (x) { return '<li class="' + (x.ok ? "ok" : "no") + '">' + (x.ok ? "✔ " : "✘ ") + x.name + (x.detail ? " — " + x.detail : "") + "</li>"; }).join("");
+</script></body></html>
